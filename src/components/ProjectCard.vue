@@ -108,7 +108,7 @@ export default {
     .url{
       display: flex;
       align-items: center;
-      font-family: 'Fira Sans';
+      font-family: 'Karla';
       font-size: .9em;
     }
 }

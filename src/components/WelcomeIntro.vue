@@ -3,25 +3,19 @@
     <g-image src="~/assets/images/profile.webp" alt="welcome-pic" />
     <div>
       <h1 class="welcome-text">
-        Hi my name is <strong>Utrodus</strong><br />
-
+        Hi There, my name is <strong>Utrodus Said, </strong>
+        <br />
         I'm a
         <strong>
-          <textra
-            :data="words"
-            :timer="2"
-            :infinite="true"
-            filter="bottom-top" /></strong
-        ><br />
-        Based in Blitar City, Indonesia.
+          <textra :data="words" :timer="2" :infinite="true" filter="bottom-top"
+        /></strong>
+        from Blitar, Indonesia.
         <!-- Experience <strong></strong> things for the <strong>web</strong> -->
       </h1>
       <p class="welcome-intro">
         I have <strong> 3 years</strong> of working experience in
-        <strong>Mobile App Development.</strong> I Offer to Develop Beautiful
-        Mobile Apps <strong>fast and cost-efficient</strong> with Dart & Flutter
-        SDK. If you're looking to hire a Flutter Developer Remotely, feel free
-        to email me at
+        <strong>Flutter App Development</strong> <br />
+        If you're looking to hire a me, feel free to email me at
         <strong>
           <a href="mailto:contact.utrodus@gmail.com">
             contact.utrodus@gmail.com</a
@@ -77,7 +71,7 @@
 
       <g-link
         to="https://drive.google.com/file/d/135kURYsVPbmp4kbR50s0puBsTdd_y352/view?usp=sharing"
-        aria-label="Download Curiculum Vitae"
+        aria-label="Download Resume"
         class="download-cv"
       >
         <svg
@@ -96,7 +90,7 @@
           <polyline points="7 10 12 15 17 10"></polyline>
           <line x1="12" y1="15" x2="12" y2="3"></line>
         </svg>
-        Download CV
+        Download Resume
       </g-link>
     </div>
   </div>
@@ -118,7 +112,7 @@ export default {
 
 <style lang="scss" scoped>
 .welcome {
-	font-family: "Merriweather", serif;
+	font-family: "Karla", serif;
 	display: flex;
 	margin: 2rem 0;
 
@@ -128,8 +122,8 @@ export default {
 
 	img {
 		border-radius: 50%;
-		width: 20%;
-		height: 20%;
+		width: 15%;
+		height: 15%;
 		margin-right: 2rem;
 		box-shadow: 1px 10px 30px 0 rgba(0, 0, 0, 0.1);
 
@@ -152,8 +146,7 @@ export default {
 
 	&-intro {
 		margin-top: 2rem;
-		width: 85%;
-
+font-size: 1.1em;
 		@media screen and (max-width: 800px) {
 			width: 100%;
 		}
@@ -173,7 +166,7 @@ a{
 }
    button.mail-me{
          margin-right: 0.9rem;
-    font-family: 'Fira Sans';
+    font-family: 'Karla';
     padding: 0.75rem 2em;
     font-size: 0.85em;
     font-weight: bold;
@@ -195,7 +188,7 @@ a{
   }
 
 .download-cv{
- font-family: 'Fira Sans';
+ font-family: 'Karla';
     font-weight: 400;
     font-size: 0.7em;
     display: flex;

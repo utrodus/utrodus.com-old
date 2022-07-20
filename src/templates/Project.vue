@@ -189,7 +189,7 @@ query Project ($id: ID!) {
                         margin-bottom: 2rem;  display: flex;
                             align-items: center;
                             justify-content: center;
-                            font-family: "Fira Sans", sans-serif;
+                            font-family: "Karla", sans-serif;
                                 font-size: 1em;
                       color: #65f4ad;
                         svg{

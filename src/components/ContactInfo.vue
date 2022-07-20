@@ -52,7 +52,7 @@ align-items: center;
 	}
   .note{
         font-size: .85em;
-    font-family: 'Fira Sans';
+    font-family: 'Karla';
 
   }
 }

@@ -110,7 +110,7 @@ a {
 	text-transform: uppercase;
 	font-weight: 500;
 	color: var(--body-color);
-	font-family: "Fira Sans", sans-serif;
+	font-family: "Karla", sans-serif;
 	.search-icon{
 		margin-right: 0;
 		display: flex;
