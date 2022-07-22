@@ -80,9 +80,9 @@ export default {
 
 .main {
 	margin: 0 auto;
-	padding: 2.5% 15%;
+	padding: 2.5% 19% 1% 19%;
 
-	@media screen and (max-width: 700px) {
+	@media screen and (max-width: 800px) {
 		margin: 0;
 		padding: 0.5% 5%;
 	}

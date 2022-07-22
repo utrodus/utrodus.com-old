@@ -3,25 +3,80 @@
     <g-image src="~/assets/images/profile.webp" alt="welcome-pic" />
     <div>
       <h1 class="welcome-text">
-        Hi There, my name is <strong>Utrodus Said, </strong>
-        <br />
+        Hi There, My Name is <strong>Utrodus</strong>
+      </h1>
+      <h1 class="welcome-flip">
         I'm a
-        <strong>
+        <span class="welcome-flip-word">
           <textra :data="words" :timer="2" :infinite="true" filter="bottom-top"
-        /></strong>
-        from Blitar, Indonesia.
-        <!-- Experience <strong></strong> things for the <strong>web</strong> -->
+        /></span>
       </h1>
       <p class="welcome-intro">
-        I have <strong> 3 years</strong> of working experience in
-        <strong>Flutter App Development</strong> <br />
-        If you're looking to hire a me, feel free to email me at
+        I Offer services for developing mobile applications (
+        <svg viewBox="0 0 128 128" width="16" height="16">
+          <path
+            fill="#00c4b3"
+            d="M35.2 34.9l-8.3-8.3v59.7l.1 2.8c0 1.3.2 2.8.7 4.3l65.6 23.1 16.3-7.2-74.4-74.4z"
+          ></path>
+          <path
+            d="M27.7 93.4zm81.9 15.9l-16.3 7.2-65.4-23.1c1.3 4.8 4 10.1 7 13.2l21.3 21.2 47.6.1 5.8-18.6z"
+            fill="#22d3c5"
+          ></path>
+          <path
+            fill="#0075c9"
+            d="M1.7 65.1C-.4 67.3.7 72 4 75.5l14.7 14.8 9.2 3.3c-.3-1.5-.7-3-.7-4.3l-.1-2.8-.2-59.8m82.7 82.6l7.2-16.4-23-65.6c-1.5-.3-3-.6-4.3-.7l-2.9-.1-59.6.1"
+          ></path>
+          <path
+            d="M93.6 27.3c.2 0 .2 0 0 0 .2 0 .2 0 0 0zm16 82l17.7-5.8V54.8l-20.4-20.5c-3-3-8.3-5.8-13.2-7l23.1 65.6"
+            fill="#00a8e1"
+          ></path>
+          <path
+            fill="#00c4b3"
+            d="M90.5 18.2L75.7 3.5c-3.4-3.4-8-4.4-10.4-2.3L26.9 26.6h59.5l2.9.1c1.3 0 2.8.2 4.3.7l-3.1-9.2z"
+          ></path>
+        </svg>
+        +
+        <svg viewBox="0 0 128 128" width="16" height="16">
+          <g fill="#3FB6D3">
+            <path
+              d="M12.3 64.2L76.3 0h39.4L32.1 83.6zM76.3 128h39.4L81.6 93.9l34.1-34.8H76.3L42.2 93.5z"
+            ></path>
+          </g>
+          <path
+            fill="#27AACD"
+            d="M81.6 93.9l-20-20-19.4 19.6 19.4 19.6z"
+          ></path>
+          <path
+            fill="#19599A"
+            d="M115.7 128L81.6 93.9l-20 19.2L76.3 128z"
+          ></path>
+          <linearGradient
+            id="flutter-original-a"
+            gradientUnits="userSpaceOnUse"
+            x1="59.365"
+            y1="116.36"
+            x2="86.825"
+            y2="99.399"
+          >
+            <stop offset="0" stop-color="#1b4e94"></stop>
+            <stop offset=".63" stop-color="#1a5497"></stop>
+            <stop offset="1" stop-color="#195a9b"></stop>
+          </linearGradient>
+          <path
+            fill="url(#flutter-original-a)"
+            d="M61.6 113.1l30.8-8.4-10.8-10.8z"
+          ></path>
+        </svg>
+
+        ) with a passion for products <br />
+        that are beautiful and easy to use. If you're looking to hire me, feel
+        free to
         <strong>
-          <a href="mailto:contact.utrodus@gmail.com">
-            contact.utrodus@gmail.com</a
-          ></strong
+          <a href="mailto:contact.utrodus@gmail.com"> Email Me</a></strong
         >
       </p>
+      <p></p>
+
       <div class="welcome-cta">
         <button class="mail-me">
           <a href="mailto:contact.utrodus@gmail.com"> Hire Me</a>
@@ -70,7 +125,7 @@
       </div>
 
       <g-link
-        to="https://drive.google.com/file/d/135kURYsVPbmp4kbR50s0puBsTdd_y352/view?usp=sharing"
+        to="https://drive.google.com/file/d/13bVeMUYhrYGSwN4OWAM2apLwunNI5faa/view?usp=sharing"
         aria-label="Download Resume"
         class="download-cv"
       >
@@ -90,7 +145,7 @@
           <polyline points="7 10 12 15 17 10"></polyline>
           <line x1="12" y1="15" x2="12" y2="3"></line>
         </svg>
-        Download Resume
+        MY RESUME
       </g-link>
     </div>
   </div>
@@ -101,7 +156,7 @@ import Textra from "~/components/Textra.vue";
 export default {
   data() {
     return {
-      words: ["Flutter Freelancer", "Flutter Developer", "Flutter Enthusiast"],
+      words: ["Flutter Freelancer 🎯", "Flutter Developer 🦸🏻‍♂️"],
     };
   },
   components: {
@@ -122,8 +177,8 @@ export default {
 
 	img {
 		border-radius: 50%;
-		width: 15%;
-		height: 15%;
+		width: 25%;
+		height: 25%;
 		margin-right: 2rem;
 		box-shadow: 1px 10px 30px 0 rgba(0, 0, 0, 0.1);
 
@@ -139,14 +194,31 @@ export default {
 		line-height: 1.5;
 		letter-spacing: 1px;
 
-		@media screen and (max-width: 800px) {
+		@media screen and (max-width: 437px) {
+			font-size: 1.6em;
+		}
+    @media screen and (max-width: 800px) {
 			text-align: center;
 		}
 	}
 
+  &-flip{
+    	@media screen and (max-width: 375px) {
+        font-size: 1.2em;
+			text-align: center;
+		}
+    @media screen and (min-width: 376px ) and (max-width: 768px) {
+      font-size: 1.5em;
+			text-align: center;
+		}
+    &-word{
+      color: var(--title-color);
+    }
+    
+  }
+
 	&-intro {
-		margin-top: 2rem;
-font-size: 1.1em;
+    font-size: 1.1em;
 		@media screen and (max-width: 800px) {
 			width: 100%;
 		}

@@ -1,7 +1,7 @@
 <template>
   <div class="nav-header">
     <div class="nav-header__content">
-      <g-link to="/">UT</g-link>
+      <g-link to="/">utrodus.my.id</g-link>
     </div>
     <div class="nav-header__links">
       <g-link to="/">Home</g-link>
@@ -10,6 +10,7 @@
       <!-- <g-link to="/resources">Resources</g-link> -->
       <g-link to="/about">About</g-link>
       <g-link to="mailto:contact.utrodus@gmail.com">Contact</g-link>
+
       <!-- <g-link to="/search" aria-label="Search">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +81,7 @@ export default {
 
 	.active--exact {
 		color: var(--title-color);
-		border-bottom: 2px solid var(--title-color);
+		font-weight: bold;
 	}
 
 	&__links {
@@ -107,15 +108,13 @@ a {
 	text-decoration: none;
 	margin-right: 1.5rem;
 	padding: 0;
-	text-transform: uppercase;
-	font-weight: 500;
 	color: var(--body-color);
 	font-family: "Karla", sans-serif;
-	.search-icon{
-		margin-right: 0;
-		display: flex;
-		align-self: center;
-	}
+	// .search-icon{
+	// 	margin-right: 0;
+	// 	display: flex;
+	// 	align-self: center;
+	// }
 	@media screen and (max-width: 800px) {
 		margin-right: 0.7rem;
 	}

@@ -161,7 +161,6 @@
   padding: 1rem;
   width: 100%;
   height: auto;
-  margin-top: 2.5rem;
 
   p {
     font-style: italic;
