@@ -9,14 +9,11 @@
         <p>
           Email:
           <a href="mailto:contact.utrodus@gmail.com">
-            contact.utrodus@gmail.com</a
-          >
+            contact.utrodus@gmail.com</a>
         </p>
         <p>
           Phone:
-          <a
-            href="https://api.whatsapp.com/send?phone=628165416082&text=Hi!%20Utrodus%20%F0%9F%96%90%EF%B8%8F"
-          >
+          <a href="https://api.whatsapp.com/send?phone=628165416082&text=Hi!%20Utrodus%20%F0%9F%96%90%EF%B8%8F">
             +62 816 5416 082
           </a>
         </p>
@@ -41,31 +38,33 @@ export default {
 
 <style lang="scss" scoped>
 .contact {
-	padding-top: 5rem;
-	display: flex;
-align-items: center;
-	@media screen and (max-width: 800px) {
-		width: 100%;
-		margin: 3rem 0 0 0;
-		padding: 0;
-		flex-direction: column-reverse;
-	}
-  .note{
-        font-size: .85em;
+  padding-top: 5rem;
+  display: flex;
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    margin: 3rem 0 0 0;
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+
+  .note {
+    font-size: .85em;
     font-family: 'Karla';
 
   }
 }
-.sns {
-	width: 50%;
 
-	@media screen and (max-width: 800px) {
-		margin-top: 3rem;
-		width: 100%;
-	}
+.sns {
+  width: 50%;
+
+  @media screen and (max-width: 800px) {
+    margin-top: 3rem;
+    width: 100%;
+  }
 }
 
 p {
-	margin: 0;
+  margin: 0;
 }
 </style>
