@@ -1,17 +1,17 @@
 <template>
-  <div class="nav-header">
-    <div class="nav-header__content">
-      <g-link to="/">utrodus.my.id</g-link>
-    </div>
-    <div class="nav-header__links">
-      <g-link to="/">Home</g-link>
-      <g-link to="/portfolio">Portfolio</g-link>
-      <!-- <g-link to="/blog">Blog</g-link> -->
-      <!-- <g-link to="/resources">Resources</g-link> -->
-      <g-link to="/about">About</g-link>
-      <g-link to="mailto:contact.utrodus@gmail.com">Contact</g-link>
+	<div class="nav-header">
+		<div class="nav-header__content">
+			<g-link to="/">utrodus.my.id</g-link>
+		</div>
+		<div class="nav-header__links">
+			<g-link to="/">Home</g-link>
+			<g-link to="/portfolio">Portfolio</g-link>
+			<!-- <g-link to="/blog">Blog</g-link> -->
+			<!-- <g-link to="/resources">Resources</g-link> -->
+			<g-link to="/about">About</g-link>
+			<g-link to="mailto:contact.utrodus@gmail.com">Contact</g-link>
 
-      <!-- <g-link to="/search" aria-label="Search">
+			<!-- <g-link to="/search" aria-label="Search">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -27,21 +27,21 @@
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>
       </g-link> -->
-    </div>
-    <ToggleTheme />
-  </div>
+		</div>
+		<ToggleTheme />
+	</div>
 </template>
 
 <script>
 import ToggleTheme from "~/components/ToggleTheme.vue";
 export default {
-  components: {
-    ToggleTheme,
-  },
-  props: {
-    showDetails: false,
-    type: Boolean,
-  },
+	components: {
+		ToggleTheme,
+	},
+	props: {
+		showDetails: false,
+		type: Boolean,
+	},
 };
 </script>
 
@@ -64,6 +64,10 @@ export default {
 		height: auto;
 	}
 
+	@media (min-width: 801px) and (max-width:1200px) {
+		padding: 2.5% 10%;
+	}
+
 	&__content {
 		flex-basis: 60%;
 
@@ -74,9 +78,12 @@ export default {
 		}
 
 		@media screen and (max-width: 800px) {
+			text-align: center;
 			flex-basis: 0;
-			margin: 1rem 0;
+			margin: 1rem 2rem 2rem 0;
 		}
+
+
 	}
 
 	.active--exact {
@@ -91,11 +98,19 @@ export default {
 		align-items: center;
 		padding: 5px;
 
-		@media screen and (max-width: 800px) {
+		@media screen and (max-width: 700px) {
 			justify-content: space-around;
-			padding: 0;
+			padding: 0 0.5rem;
 			margin-bottom: 1rem;
 		}
+
+		@media (min-width: 701px) and(max-width:800px) {
+			justify-content: space-around;
+			padding: 0 2rem;
+			margin-bottom: 1rem;
+		}
+
+
 	}
 }
 
@@ -110,6 +125,7 @@ a {
 	padding: 0;
 	color: var(--body-color);
 	font-family: "Karla", sans-serif;
+
 	// .search-icon{
 	// 	margin-right: 0;
 	// 	display: flex;
