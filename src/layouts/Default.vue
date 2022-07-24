@@ -1,13 +1,13 @@
 <template>
-  <div id="app">
-    <Navbar />
-    <transition name="fade" appear>
-      <main class="main" id="page-wrap">
-        <slot />
-      </main>
-    </transition>
-    <Footer />
-  </div>
+	<div id="app">
+		<Navbar />
+		<transition name="fade" appear>
+			<main class="main" id="page-wrap">
+				<slot />
+			</main>
+		</transition>
+		<Footer />
+	</div>
 </template>
 
 <script>
@@ -15,10 +15,10 @@ import Navbar from "~/components/Navbar.vue";
 import Footer from "~/components/Footer.vue";
 
 export default {
-  components: {
-    Navbar,
-    Footer,
-  },
+	components: {
+		Navbar,
+		Footer,
+	},
 };
 </script>
 
@@ -80,12 +80,24 @@ export default {
 
 .main {
 	margin: 0 auto;
-	padding: 2.5% 19% 1% 19%;
+	// padding: 2.5% 19% 1% 19%;
+	max-width: 1200px;
+
 
 	@media screen and (max-width: 800px) {
 		margin: 0;
 		padding: 0.5% 5%;
 	}
+
+	@media (min-width: 801px) and (max-width: 1200px) {
+		padding: 0.5% 5rem;
+	}
+
+	@media (min-width: 1201px) {
+		padding: 0.5% 4rem;
+	}
+
+
 }
 
 .fade-enter-active {

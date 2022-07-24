@@ -55,7 +55,7 @@
             <a href="mailto:contact.utrodus@gmail.com"> Hire Me</a>
           </button>
           <g-link to="https://drive.google.com/file/d/13bVeMUYhrYGSwN4OWAM2apLwunNI5faa/view?usp=sharing"
-            aria-label="Download Resume" class="download-cv">
+            aria-label="Download Resume" class="download-file">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
               class="feather feather-download">
@@ -126,11 +126,15 @@ export default {
     margin: 0 auto 2rem auto;
     box-shadow: 1px 10px 30px 0 rgba(0, 0, 0, 0.1);
 
-    @media (min-width: 500px) and (max-width: 768px) {
+    @media (min-width: 500px) and (max-width: 800px) {
       width: 30%;
       height: 30%;
     }
 
+    @media (min-width: 801px) {
+      margin-right: 2.5rem;
+      width: 18rem;
+    }
   }
 
   &-text {
@@ -138,18 +142,36 @@ export default {
     line-height: 1.5;
     letter-spacing: 1px;
     text-align: center;
-    font-size: 1.6em;
+    font-size: 1.4em;
+
+
+
+    @media (min-width: 801px) {
+      text-align: left;
+    }
+
+    @media (min-width: 801px) and (max-width: 1000px) {
+      font-size: 1.3em;
+    }
   }
 
   &-flip {
-    @media screen and (max-width: 375px) {
-      font-size: 1.2em;
-      text-align: center;
+    text-align: center;
+
+    @media (min-width: 801px) {
+      text-align: left;
     }
 
-    @media screen and (min-width: 376px) and (max-width: 768px) {
+    @media screen and (max-width: 375px) {
+      font-size: 1.2em;
+    }
+
+    @media screen and (min-width: 376px) and (max-width: 800px) {
       font-size: 1.5em;
-      text-align: center;
+    }
+
+    @media (min-width: 801px) and (max-width: 1000px) {
+      font-size: 1em;
     }
 
     &-word {
@@ -162,6 +184,14 @@ export default {
     font-size: 0.9em;
     margin-top: 1.5rem;
     text-align: center;
+
+    @media (min-width: 801px) {
+      text-align: left;
+    }
+
+    @media (min-width: 801px) and (max-width: 1000px) {
+      font-size: 0.8em;
+    }
   }
 
   &-cta {
@@ -169,6 +199,10 @@ export default {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+
+    @media (min-width: 801px) {
+      justify-content: start;
+    }
 
     .feather {
       color: var(--title-color);
@@ -209,7 +243,7 @@ export default {
         }
       }
 
-      .download-cv {
+      .download-file {
         min-width: 44px;
         min-height: 44px;
         font-family: 'Karla';

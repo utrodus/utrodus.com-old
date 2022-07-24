@@ -1,10 +1,6 @@
 <template>
   <div class="author">
-    <g-image
-      src="~/assets/images/profile.png"
-      alt="welcome-pic"
-      class="author__image"
-    />
+    <g-image src="~/assets/images/profile.png" alt="welcome-pic" class="author__image" />
 
     <div class="author-info">
       <p class="author-info__intro">
@@ -66,41 +62,43 @@ export default {
 </script>
 <style lang="scss">
 .author {
-	max-width: 75%;
-	padding: calc(var(--space) / 2) 0;
-	display: flex;
+  max-width: 75%;
+  padding: calc(var(--space) / 2) 0;
+  display: flex;
+  align-items: center;
 
-	@media screen and (max-width: 800px) {
-		max-width: 100%;
-	}
+  @media screen and (max-width: 800px) {
+    max-width: 100%;
+  }
 
-	&__image {
-		border-radius: 50%;
-		width: 90px;
-		height: 90px;
-	}
+  &__image {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+  }
 
-	&-info {
-		margin-left: 1.3rem;
+  &-info {
+    margin-left: 1.3rem;
 
-		&__name {
-			font-size: 1rem;
-			margin-bottom: 0;
-			color: var(--title-color);
-		}
-
-		&__intro {
-			opacity: 0.8;
-			font-size: 0.9rem;
+    &__name {
+      font-size: 1rem;
       margin-bottom: 0;
-		}
+      color: var(--title-color);
+    }
 
-		&__links {
-			font-size: 0.75em;
-			a {
-				margin-right: 0.75em;
-			}
-		}
-	}
+    &__intro {
+      opacity: 0.8;
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+
+    &__links {
+      font-size: 0.75em;
+
+      a {
+        margin-right: 0.75em;
+      }
+    }
+  }
 }
 </style>

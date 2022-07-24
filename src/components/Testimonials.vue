@@ -73,7 +73,7 @@ export default {
 
 <style lang="scss" scoped>
 .testimonials {
-  padding: 4.5rem 0 3rem 0;
+  padding: 4.5rem 0;
 
   .header-title {
     text-align: center;
