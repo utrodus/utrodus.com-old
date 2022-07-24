@@ -82,7 +82,7 @@ export default {
   }
 
   .carousel-3d-container {
-    min-height: 362px !important;
+    min-height: 400px !important;
 
     .carousel-3d-slider {
       height: auto !important;
