@@ -50,7 +50,6 @@ export default {
 
   @media screen and (max-width: 800px) {
     width: 100%;
-    margin: 3rem 0 0 0;
     padding: 0;
     flex-direction: column-reverse;
   }
