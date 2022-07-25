@@ -54,7 +54,7 @@
           <button class="mail-me">
             <a href="mailto:contact.utrodus@gmail.com"> Hire Me</a>
           </button>
-          <g-link to="https://drive.google.com/file/d/13bVeMUYhrYGSwN4OWAM2apLwunNI5faa/view?usp=sharing"
+          <g-link to="https://drive.google.com/uc?export=download&id=13bVeMUYhrYGSwN4OWAM2apLwunNI5faa"
             aria-label="Download Resume" class="download-file">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
