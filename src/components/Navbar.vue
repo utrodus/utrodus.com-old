@@ -13,11 +13,9 @@
 			<g-link to="mailto:contact.utrodus@gmail.com">Contact</g-link>
 			<g-link class="resume" to="https://drive.google.com/file/d/13bVeMUYhrYGSwN4OWAM2apLwunNI5faa/view"
 				target="_blank">
-				<strong>
 
-					Resume
+				Resume
 
-				</strong>
 			</g-link>
 
 			<!-- <g-link to="/search" aria-label="Search">
