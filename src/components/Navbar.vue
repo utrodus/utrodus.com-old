@@ -5,9 +5,9 @@
 		</div>
 		<div class="nav-header__links">
 			<!-- <g-link to="/">Home</g-link> -->
+			<g-link to="/portfolio">Projects</g-link>
 			<g-link to="/about">About</g-link>
 
-			<g-link to="/portfolio">Projects</g-link>
 			<!-- <g-link to="/blog">Blog</g-link> -->
 			<!-- <g-link to="/resources">Resources</g-link> -->
 			<g-link to="mailto:contact.utrodus@gmail.com">Contact</g-link>
