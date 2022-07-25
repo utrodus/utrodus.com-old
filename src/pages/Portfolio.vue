@@ -1,13 +1,11 @@
 <template>
   <Layout>
 
-    <div>
-      <h1 class="welcome-text">My Projects</h1>
+    <h1 class="welcome-text">My Projects</h1>
 
-      <div class="projects">
-        <ProjectCard v-for="edge in $page.projects.edges" :key="edge.node.id" :project="edge.node" />
-        <Pager :info="$page.projects.pageInfo" />
-      </div>
+    <div class="projects">
+      <ProjectCard v-for="edge in $page.projects.edges" :key="edge.node.id" :project="edge.node" />
+      <Pager :info="$page.projects.pageInfo" />
     </div>
   </Layout>
 </template>
@@ -54,6 +52,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.welcome-text {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
 .projects {
   display: grid;
   grid-template-columns: repeat(1fr);
