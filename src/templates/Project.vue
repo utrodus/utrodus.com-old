@@ -9,11 +9,7 @@
         <div class="short-desc_item">
           <h3 class="short-desc_item_title">ROLE</h3>
 
-          <p
-            class="short-desc_item_content"
-            v-for="role in $page.project.role"
-            :key="role"
-          >
+          <p class="short-desc_item_content" v-for="role in $page.project.role" :key="role">
             {{ role }}
           </p>
         </div>
@@ -43,26 +39,12 @@
           <h3 class="short-desc_item_title">URL</h3>
 
           <p class="short-desc_item_content">
-            <g-link :to="$page.project.website_url" class="url"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-link"
-              >
-                <path
-                  d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
-                ></path>
+            <g-link :to="$page.project.website_url" class="url"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
 
-                <path
-                  d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
-                ></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
               </svg>
               Preview
             </g-link>
@@ -105,11 +87,7 @@
     </div>
 
     <div class="project content-box">
-      <g-image
-        alt="Cover image"
-        v-if="$page.project.cover_image"
-        :src="$page.project.cover_image"
-      />
+      <g-image alt="Cover image" v-if="$page.project.cover_image" :src="$page.project.cover_image" />
       <div class="project__header"></div>
 
       <div class="project__content" v-html="$page.project.content" />
@@ -163,92 +141,108 @@ query Project ($id: ID!) {
 
 <style lang="scss" scoped>
 .project-title {
-    padding: calc(var(--space) / 6) 0 calc(var(--space) / 6);
-    text-align: center;
-        max-width: 1024px;
-    margin: 0  auto 1rem auto;
-     .short-desc {
-       width: 100%;
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      margin: 0 auto;
-     
-     	@media screen and (max-width: 500px) {
-        grid-template-columns: repeat(2,1fr);
+  padding: calc(var(--space) / 6) 0 calc(var(--space) / 6);
+  text-align: center;
+  max-width: 1024px;
+  margin: 0 auto 1rem auto;
+
+  .short-desc {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+
+    @media screen and (max-width: 500px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &_item {
+      padding: 1rem;
+
+      &_title {
+        margin: 0 0 0.5em 0;
+        font-size: 1.1em;
       }
-            &_item {
-                padding: 1rem;
-                &_title {
-                    margin: 0 0 0.5em 0;
-                    font-size: 1.1em;
-                }
-                &_content {
-                    margin-bottom: 0;
-                    font-size: .85em;
-                    .url {
-                        margin-bottom: 2rem;  display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            font-family: "Karla", sans-serif;
-                                font-size: 1em;
-                      color: #65f4ad;
-                        svg{
-                          margin-right: .5rem;
-                        }
-                    }
-                }
-            }
+
+      &_content {
+        margin-bottom: 0;
+        font-size: .85em;
+
+        .url {
+          margin-bottom: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: "Karla", sans-serif;
+          font-size: 1em;
+          color: #65f4ad;
+
+          svg {
+            margin-right: .5rem;
+          }
         }
+      }
+    }
+  }
 }
 
 .project {
-    width: 100%;
-    margin: 0 auto 3.5rem auto;
-    max-width: 1024px;
-    &__header {
-        width: calc(100% + var(--space) * 2);
-        margin-left: calc(var(--space) * -1);
-        margin-top: calc(var(--space) * 1);
-        margin-bottom: calc(var(--space) * 2);
-        overflow: hidden;
-        border-radius: var(--radius) var(--radius) 0 0;
-        img {
-            width: 100%;
-        }
-        &:empty {
-            display: none;
-        }
-       
+  width: 100%;
+  margin: 0 auto 3.5rem auto;
+  max-width: 1024px;
+
+  &__header {
+    width: calc(100% + var(--space) * 2);
+    margin-left: calc(var(--space) * -1);
+    margin-top: calc(var(--space) * 1);
+    margin-bottom: calc(var(--space) * 2);
+    overflow: hidden;
+    border-radius: var(--radius) var(--radius) 0 0;
+
+    img {
+      width: 100%;
     }
-    &.content-box{
-      img{
-        width: 100%;
-        margin-bottom: 1.5rem;
+
+    &:empty {
+      display: none;
+    }
+
+  }
+
+  &.content-box {
+    img {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__content {
+    h1 {
+      margin-top: 2em;
+    }
+
+    h2:first-child {
+      margin-top: 0;
+    }
+
+    p {
+      color: var(--body-color);
+
+      img {
+        margin-top: 1.5em;
       }
     }
-    &__content {
-        h1 {
-            margin-top: 2em;
-        }
-        h2:first-child {
-            margin-top: 0;
-        }
-        p {
-            color: var(--body-color);
-            img {
-                margin-top: 1.5em;
-            }
-        }
-        img {
-            width: calc(100% + var(--space) * 2);
-            margin-left: calc(var(--space) * -1);
-            display: block;
-            max-width: none;
-        }
+
+    img {
+      width: calc(100% + var(--space) * 2);
+      margin-left: calc(var(--space) * -1);
+      display: block;
+      max-width: none;
     }
+  }
 }
 
 .project-author {
-    margin-top: calc(var(--space) / 2);
+  margin-top: calc(var(--space) / 2);
 }
 </style>
