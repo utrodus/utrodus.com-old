@@ -99,19 +99,28 @@
 
 <script>
 import Author from "~/components/Author.vue";
-
+import PostMeta from "~/components/PostMeta";
+import PostTags from "~/components/PostTags";
 export default {
   components: {
     Author,
+    PostMeta,
+    PostTags,
   },
   metaInfo() {
     return {
       title: this.$page.project.title,
       meta: [
+        { property: "og:type", content: "project" },
+        { property: "og:title", content: this.$page.project.title },
         {
           name: "description",
           content: this.$page.project.description,
         },
+        // {
+        //   property: "og:url",
+        //   content: `'https://utrodus.my.id', ${this.$page.project.path}`,
+        // },
       ],
     };
   },
