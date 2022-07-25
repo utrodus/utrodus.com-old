@@ -184,7 +184,8 @@ query Project ($id: ID!) {
           justify-content: center;
           font-family: "Karla", sans-serif;
           font-size: 1em;
-          color: #65f4ad;
+          color: var(--link-color);
+          font-weight: bold;
 
           svg {
             margin-right: .5rem;

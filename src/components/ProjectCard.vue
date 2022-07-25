@@ -2,12 +2,7 @@
   <div class="project-card content-box">
     <div class="project-card__content">
       <g-link :to="project.path">
-        <g-image
-          alt="Cover image"
-          v-if="project.cover_image"
-          class="project-card__image"
-          :src="project.cover_image"
-        />
+        <g-image alt="Cover image" v-if="project.cover_image" class="project-card__image" :src="project.cover_image" />
       </g-link>
 
       <h5 class="project-card__title" v-html="project.title" />
@@ -30,24 +25,11 @@
           ></path></svg
       ></g-link> -->
       <g-link :to="project.website_url" class="url">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="feather feather-link"
-        >
-          <path
-            d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
-          ></path>
-          <path
-            d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
-          ></path>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-link">
+          <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+          <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
         </svg>
         Preview
       </g-link>
@@ -103,14 +85,16 @@ export default {
     height: 100%;
     opacity: 0;
     overflow: hidden;
-    z-index: 0;    
+    z-index: 0;
   }
-    .url{
-      display: flex;
-      align-items: center;
-      font-family: 'Karla';
-      font-size: .9em;
-    }
+
+  .url {
+    display: flex;
+    align-items: center;
+    font-family: 'Karla';
+    font-size: 1em;
+    font-weight: bold;
+  }
 }
 
 .feather {
