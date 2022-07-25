@@ -2,7 +2,7 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
   .BundleAnalyzerPlugin;
 
 module.exports = {
-  siteName: "Utrodus Said",
+  siteName: "👨🏼‍💻 utrodus.my.id",
   siteUrl: "https://utrodus.my.id",
   siteDescription: "Flutter Developer From in Indonesia",
 
@@ -127,15 +127,15 @@ module.exports = {
         serviceWorkerPath: "service-worker.js",
         cachedFileTypes: "js,json,css,html,png,jpg,jpeg,svg",
         shortName: "Utrodus Portfolio",
-        description: "Utrodus Portfolio Website",
+        description: "Utrodus Portfolio Site",
         themeColor: "#101024",
-        backgroundColor: "#65F4AD",
+        backgroundColor: "#18191c",
         icon: "./src/favicon.png",
         lang: "en",
         msTileImage: "",
-        msTileColor: "#666600",
+        msTileColor: "#b15f2f",
         appleMaskIcon: "./src/favicon.png",
-        appleMaskIconColor: "#65F4AD",
+        appleMaskIconColor: "#18191c",
         maskableIcon: true,
       },
     },
@@ -163,8 +163,8 @@ module.exports = {
     {
       use: "gridsome-plugin-robots-txt",
       options: {
-        host: "https://utrodus.github.io/",
-        sitemap: "https://utrodus.github.io/sitemap.xml",
+        host: "https://utrodus.my.id/",
+        sitemap: "https://utrodus.my.id/sitemap.xml",
         policy: [
           {
             userAgent: "Googlebot",
