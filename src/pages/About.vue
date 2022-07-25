@@ -26,7 +26,8 @@
             A more detailed view of my professional abilities and experience
             <br />
             is available on
-            <g-link to="https://drive.google.com/file/d/13bVeMUYhrYGSwN4OWAM2apLwunNI5faa/view?usp=sharing">my resume
+            <g-link to="https://drive.google.com/file/d/13bVeMUYhrYGSwN4OWAM2apLwunNI5faa/view?usp=sharing"> <strong> My
+                Resume</strong>
             </g-link>.
           </p>
         </div>
