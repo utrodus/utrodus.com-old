@@ -29,7 +29,7 @@ import Educations from "../components/Educations.vue";
 import Testimonials from "../components/Testimonials.vue";
 export default {
   metaInfo: {
-    title: "Flutter Developer",
+    title: "Utrodus Said",
   },
 
   components: {
