@@ -61,7 +61,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(1fr);
   grid-gap: 1.25rem;
-  padding-top: 1rem;
+  padding: 1rem 0 5rem 0;
 
   @media screen and (min-width: 500px) {
     grid-template-columns: repeat(2, 1fr);
