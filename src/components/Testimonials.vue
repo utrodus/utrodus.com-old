@@ -2,8 +2,8 @@
 
   <section class="testimonials">
     <h2 class="header-title">Testimonials</h2>
-    <carousel-3d :perspective="0" :space="400" :width="450" :display="3" :clickable="true" :autoplay="true"
-      :autoplay-timeout="10000">
+
+    <hooper :settings="hooperSettings">
       <slide v-for="(slide, i) in slidesData" :index="i">
         <div class="testimonials-box">
           <p class="testimonials-box-content">
@@ -21,17 +21,40 @@
         </div>
       </slide>
 
-    </carousel-3d>
+
+    </hooper>
+
+
 
   </section>
 </template>
 
 <script>
-import { Carousel3d, Slide } from 'vue-carousel-3d';
-
+import { Hooper, Slide } from 'hooper';
+import 'hooper/dist/hooper.css';
 export default {
   data() {
     return {
+      hooperSettings: {
+        centerMode: true,
+        infiniteScroll: true,
+        autoPlay: true,
+        playSpeed: 5000,
+        wheelControl: false,
+        // itemsToShow: 1.25,
+        breakpoints: {
+          600: {
+            itemsToShow: 2
+          },
+          800: {
+            itemsToShow: 2
+          },
+          1000: {
+            itemsToShow: 3,
+            pagination: 'fraction'
+          }
+        }
+      },
       slidesData: [
         {
           id: 0,
@@ -65,9 +88,11 @@ export default {
     }
   },
   components: {
-    Carousel3d,
+    Hooper,
     Slide
-  }
+  },
+
+
 };
 </script>
 
@@ -75,42 +100,41 @@ export default {
 .testimonials {
   padding: 2.5rem 0 0;
 
-
-
   .header-title {
     text-align: center;
     margin: 0 auto 1.5rem auto;
 
   }
 
-  .carousel-3d-container {
-    min-height: 400px !important;
+  .hooper {
+    min-height: 20rem;
+    margin: 2rem 0;
 
-    .carousel-3d-slider {
-      height: auto !important;
+    .hooper-list {
+      .hooper-track {
+        align-items: center;
 
-      .carousel-3d-slide {
-        height: auto !important;
-        font-weight: 300;
-        padding: 2rem;
-        color: #000;
-        border: 1px solid #ffbf9b;
-        background-color: #fff;
-        -webkit-border-radius: 12px;
-        -moz-border-radius: 12px;
-        -ms-border-radius: 12px;
-        border-radius: 12px;
-
-        &.current {
-          height: auto !important;
-        }
+        .hooper-slide {}
       }
     }
   }
 
+
   &-box {
+    margin: 0 0.5rem;
+    font-weight: 300;
+    padding: 2rem;
+    color: #000;
+    border: 1px solid #ffbf9b;
+    background-color: #fff;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    border-radius: 12px;
+
     &-content {
       text-align: justify;
+      font-size: 0.95em;
     }
 
     &-client {

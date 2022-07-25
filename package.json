@@ -17,7 +17,7 @@
     "gridsome-plugin-pwa": "^0.0.12",
     "gridsome-plugin-remark-codesandbox": "^0.4.2",
     "gridsome-plugin-robots-txt": "^1.0.2",
-    "vue-carousel-3d": "^1.0.1"
+    "hooper": "^0.3.4"
   },
   "devDependencies": {
     "eslint": "^7.15.0",
