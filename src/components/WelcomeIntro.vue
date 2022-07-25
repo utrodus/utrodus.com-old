@@ -144,8 +144,6 @@ export default {
     text-align: center;
     font-size: 1.4em;
 
-
-
     @media (min-width: 801px) {
       text-align: left;
     }
