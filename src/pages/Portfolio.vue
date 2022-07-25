@@ -1,17 +1,11 @@
 <template>
   <Layout>
-    <!-- <h1 class="welcome-text">My recent work</h1> -->
-    <!-- <p class="welcome-intro">
-			A place where I put my work. Here you can find some of selected projects
-			I've been working on for a while.
-		</p> -->
+
     <div>
+      <h1 class="welcome-text">My Projects</h1>
+
       <div class="projects">
-        <ProjectCard
-          v-for="edge in $page.projects.edges"
-          :key="edge.node.id"
-          :project="edge.node"
-        />
+        <ProjectCard v-for="edge in $page.projects.edges" :key="edge.node.id" :project="edge.node" />
         <Pager :info="$page.projects.pageInfo" />
       </div>
     </div>
@@ -61,18 +55,21 @@ export default {
 
 <style lang="scss" scoped>
 .projects {
-	display: grid;
-		grid-template-columns: repeat(1fr);
-	grid-gap: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-gap: 1.25rem;
+  padding-top: 1rem;
+
   @media screen and (min-width: 500px) {
     grid-template-columns: repeat(2, 1fr);
   }
+
   @media screen and (min-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 </style>

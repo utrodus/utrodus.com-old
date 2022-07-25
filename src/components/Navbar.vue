@@ -4,12 +4,21 @@
 			<g-link to="/">utrodus.my.id</g-link>
 		</div>
 		<div class="nav-header__links">
-			<g-link to="/">Home</g-link>
-			<g-link to="/portfolio">Portfolio</g-link>
+			<!-- <g-link to="/">Home</g-link> -->
+			<g-link to="/about">About</g-link>
+
+			<g-link to="/portfolio">Projects</g-link>
 			<!-- <g-link to="/blog">Blog</g-link> -->
 			<!-- <g-link to="/resources">Resources</g-link> -->
-			<g-link to="/about">About</g-link>
 			<g-link to="mailto:contact.utrodus@gmail.com">Contact</g-link>
+			<g-link class="resume" to="https://drive.google.com/file/d/13bVeMUYhrYGSwN4OWAM2apLwunNI5faa/view"
+				target="_blank">
+				<strong>
+
+					Resume
+
+				</strong>
+			</g-link>
 
 			<!-- <g-link to="/search" aria-label="Search">
         <svg
@@ -99,6 +108,8 @@ export default {
 		justify-content: center;
 		align-items: center;
 		padding: 5px;
+
+		.resume {}
 
 		@media screen and (max-width: 700px) {
 			justify-content: space-around;

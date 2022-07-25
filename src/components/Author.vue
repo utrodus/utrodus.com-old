@@ -4,9 +4,9 @@
 
     <div class="author-info">
       <p class="author-info__intro">
-        Utrodus Said Al Baqi is a Flutter developer based in Indonesia. He
-        builds a Beautiful Mobile App fast and cost-efficient with Dart &
-        Flutter SDK.
+        I am a <strong>Flutter developer </strong> based in Indonesia. I build Beautiful Mobile Apps quickly and
+        cost-effectively with the
+        Dart & Flutter SDK.
       </p>
 
       <!-- <div class="author-info__links">
