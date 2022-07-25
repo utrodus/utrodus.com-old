@@ -6,10 +6,10 @@
         Hi There, My Name is <strong>Utrodus Said</strong>
       </h1>
       <h1 class="welcome-flip">
-        I'm a
-        <span class="welcome-flip-word">
+        I'm a <span class="welcome-flip-word"> Flutter Developer 🦸🏻‍♂️</span>
+        <!-- <span class="welcome-flip-word">
           <textra :data="words" :timer="2" :infinite="true" filter="bottom-top" />
-        </span>
+        </span> -->
       </h1>
       <p class="welcome-intro">
         I Offer services for developing mobile applications (
@@ -79,7 +79,10 @@
             <circle cx="4" cy="4" r="2"></circle>
           </svg>
         </g-link>
+
+
         <g-link to="https://github.com/utrodus" aria-label="Github">
+
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="feather feather-github">
