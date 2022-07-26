@@ -23,6 +23,10 @@ export default {
 </script>
 
 <style lang="scss">
+#app {
+	background: var(--app-bg-color);
+}
+
 @font-face {
 	font-family: Karla;
 	src: url(../assets/fonts/Karla-Regular.ttf);

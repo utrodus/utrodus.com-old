@@ -72,7 +72,7 @@ strong {
 
 	&::after {
 		content: "";
-		background: rgba(#ffd984, 0.3);
+		background: #849dff4d;
 		position: absolute;
 		left: 10px;
 		bottom: -2px;
@@ -89,10 +89,10 @@ strong {
 }
 
 .view-all {
-	border-bottom: 2px solid var(--title-color);
+
 	padding-bottom: 0.3rem;
 	margin-top: 1.2rem;
-
+margin-left: 0.5rem;
 	&:hover {
 		color: var(--link-color);
 	}

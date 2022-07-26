@@ -1,6 +1,6 @@
 <template>
   <div class="author">
-    <g-image src="~/assets/images/profile.png" alt="welcome-pic" class="author__image" />
+    <g-image src="~/assets/images/profile.webp" alt="profile-pic" class="author__image" />
 
     <div class="author-info">
       <p class="author-info__intro">

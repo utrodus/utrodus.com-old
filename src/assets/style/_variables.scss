@@ -5,20 +5,22 @@ html {
 
 // Light default theme
 body {
+  --app-bg-color: #F1F1F1;
   --header-bg-color: #fff;
   --bg-color: #F1F1F1;
   --bg-content-color: white;
   --bg-code: #fffbf3;
   --body-color: #444;
-  --title-color: #964c20;
-  --link-color: #b56530;
+  --title-color: #18191c;
+  --link-color: #230A4A;
   --cta-color: #ffffff;
-  --cta-bg-color: #b15f2f;
+  --cta-bg-color: #8a27b5;
   --border-color: rgba(0, 0, 0, 0.1);
   --space: 0.5rem;
   --content-width: 860px;
   --header-height: 80px;
   --radius: 5px;
+  --job-title-color:  linear-gradient(45deg,#f83a3a 10%,#f13dd4 50%,#7000ff 90%);
 }
 
 // Make  things smaller for mobile
@@ -35,14 +37,17 @@ body {
 
 // Override variables for light theme
 body[data-theme="dark"] {
+  --app-bg-color: radial-gradient(circle at 45% 35vh,#551f2dab, rgba(255, 255, 255, 0) 25%) ,radial-gradient(circle at 60% 45vh,#23014eb5, rgba(255, 255, 255, 0) 25%);
   --header-bg-color: #18191c;
   --bg-color: #18191c;
   --bg-content-color: #1e2023;
   --bg-code: rgba(0, 0, 0, 0.3);
   --border-color: rgba(255, 255, 255, 0.1);
-  --body-color: #ffffff;
-  --title-color: #ffbf9b;
-  --link-color: #ffbf9b;
-  --cta-color: #18191c;
-  --cta-bg-color: #ffbf9b;
+  --body-color: rgba(255, 255, 255, 0.836);
+  --title-color: #fff;
+  --link-color: #fff;
+  --cta-color: #0d0d0d;
+  --cta-bg-color: hsla(0, 0%, 100%, .9);
+  --job-title-color: #fff;
+   
 }

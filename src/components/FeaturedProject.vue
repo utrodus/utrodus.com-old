@@ -2,11 +2,7 @@
   <div>
     <h2 class="header-title">Featured Projects</h2>
     <div class="projects">
-      <ProjectCard
-        v-for="project in $static.allProject.edges"
-        :key="project.node.id"
-        :project="project.node"
-      />
+      <ProjectCard v-for="project in $static.allProject.edges" :key="project.node.id" :project="project.node" />
     </div>
     <g-link to="/portfolio" class="view-all"> View all projects </g-link>
   </div>
@@ -45,17 +41,21 @@ export default {
 
 <style lang="scss" scoped>
 .projects {
-	display: grid;
-	grid-template-columns: repeat(1fr);
-	grid-gap: 1.25rem;
-  .view-all{
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-gap: 1.25rem;
+
+  .view-all {
+    font-size: 0.8rem;
     display: inline-block;
-      margin-top: 1.5rem;
-          font-weight: 600;
+    margin-top: 1.5rem;
+    font-weight: 600;
   }
+
   @media screen and (min-width: 500px) {
     grid-template-columns: repeat(2, 1fr);
   }
+
   @media screen and (min-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
   }

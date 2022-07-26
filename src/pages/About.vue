@@ -5,7 +5,7 @@
         About Me <span>(A bit 👦🏻 about myself)</span>
       </h1>
       <div class="about-content">
-        <g-image src="~/assets/images/utrodus.png" alt="utrodus-pic" />
+        <g-image src="~/assets/images/utrodus.webp" alt="utrodus-pic" />
         <div class="paragraf">
           <p>
             Hello, my name is Utrodus Said Al Baqi, Flutter Developer from

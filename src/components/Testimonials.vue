@@ -2,7 +2,6 @@
 
   <section class="testimonials">
     <h2 class="header-title">Testimonials</h2>
-
     <hooper :settings="hooperSettings">
       <slide v-for="(slide, i) in slidesData" :index="i">
         <div class="testimonials-box">
@@ -105,6 +104,8 @@ export default {
     margin: 0 auto 1.5rem auto;
 
   }
+
+
 
   .hooper {
     min-height: 20rem;

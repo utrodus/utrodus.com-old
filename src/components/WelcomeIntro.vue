@@ -1,12 +1,12 @@
 <template>
   <div class="welcome">
-    <g-image src="~/assets/images/profile.webp" alt="welcome-pic" />
+    <g-image src="~/assets/images/profile1.webp" alt="profile picture" />
     <div>
       <h1 class="welcome-text">
         Hi There, My Name is <strong>Utrodus Said</strong>
       </h1>
       <h1 class="welcome-flip">
-        I'm a <span class="welcome-flip-word"> Flutter Developer 🦸🏻‍♂️</span>
+        I'm a <span class="welcome-flip-word"> Flutter Developer </span> <span style="color:white;">🦸🏻‍♂️</span>
         <!-- <span class="welcome-flip-word">
           <textra :data="words" :timer="2" :infinite="true" filter="bottom-top" />
         </span> -->
@@ -176,7 +176,10 @@ export default {
     }
 
     &-word {
-      color: var(--title-color);
+      background: linear-gradient(45deg, #ff7070 10%, #f13dd4 50%, #933fff 90%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
   }
@@ -221,27 +224,24 @@ export default {
       flex-direction: column;
 
       button.mail-me {
-        margin-right: 0.9rem;
+        transition: background-color .2s;
+
+        background-color: var(--cta-bg-color);
+        background-clip: padding-box;
+        border: 3px solid hsla(0, 0%, 100%, .3);
+        border-radius: 8px;
         font-family: 'Karla';
         padding: 0.75rem 2em;
         font-size: 0.85em;
         font-weight: bold;
-        border: none;
-        border-radius: 5px;
-        background: var(--cta-bg-color);
-        border: 1px solid var(--cta-bg-color);
-        border-radius: 3px;
+
         cursor: pointer;
 
         a {
           color: var(--cta-color);
         }
 
-        &:hover {
-          background: var(--cta-bg-color);
-          border: 1px solid var(--cta-bg-color);
 
-        }
       }
 
       .download-file {
