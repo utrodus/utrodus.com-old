@@ -70,8 +70,8 @@
           </g-link>
         </div>
 
-        <g-link to="https://www.linkedin.com/in/utrodus-said/" aria-label="Linkedin">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+        <g-link to="https://www.linkedin.com/in/utrodus-said/" aria-label="Linkedin" class="icon-socmed">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="feather feather-linkedin">
             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -81,9 +81,9 @@
         </g-link>
 
 
-        <g-link to="https://github.com/utrodus" aria-label="Github">
+        <g-link to="https://github.com/utrodus" aria-label="Github" class="icon-socmed">
 
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="feather feather-github">
             <path
@@ -209,7 +209,7 @@ export default {
     }
 
     .feather {
-      color: var(--title-color);
+      color: white !important;
       font-size: 1rem;
       margin: 0.5rem 1rem;
     }
@@ -217,6 +217,14 @@ export default {
     a {
       display: flex;
       align-items: center;
+
+      &.icon-socmed {
+
+        background: linear-gradient(180deg, rgba(101, 86, 110, 1) 0%, rgba(76, 57, 88, 1) 100%);
+        border-radius: 15px;
+        margin-left: 1rem;
+        padding: 0.4rem 0;
+      }
     }
 
     .hire-me {
@@ -229,9 +237,9 @@ export default {
         background-color: var(--cta-bg-color);
         background-clip: padding-box;
         border: 3px solid hsla(0, 0%, 100%, .3);
-        border-radius: 8px;
+        border-radius: 15px;
         font-family: 'Karla';
-        padding: 0.75rem 2em;
+        padding: 1rem 2.5em;
         font-size: 0.85em;
         font-weight: bold;
 

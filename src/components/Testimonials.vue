@@ -97,7 +97,6 @@ export default {
 
 <style lang="scss" scoped>
 .testimonials {
-  padding: 2.5rem 0 0;
 
   .header-title {
     text-align: center;
@@ -125,9 +124,10 @@ export default {
     margin: 0 0.5rem;
     font-weight: 300;
     padding: 2rem;
-    color: #000;
-    border: 1px solid #ffbf9b;
-    background-color: #fff;
+    color: var(--title-color);
+    border: 1px solid rgb(102, 102, 102);
+
+    background: linear-gradient(0deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1));
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
