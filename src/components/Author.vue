@@ -1,12 +1,10 @@
 <template>
   <div class="author">
-    <g-image src="~/assets/images/profile.webp" alt="profile-pic" class="author__image" />
+    <g-image src="~/assets/images/profile1.webp" alt="profile-pic" class="author__image" />
 
     <div class="author-info">
       <p class="author-info__intro">
-        I am a <strong>Flutter developer </strong> based in Indonesia. I build Beautiful Mobile Apps quickly and
-        cost-effectively with the
-        Dart & Flutter SDK.
+        Want to build a Beautiful and cost-efficiently Mobile App? <br> I will help you make it happen. Let's talk.
       </p>
 
       <!-- <div class="author-info__links">
@@ -47,8 +45,11 @@
           </svg>
         </g-link>
       </div> -->
-      <slot></slot>
+      <!-- <slot></slot> -->
     </div>
+    <button class="mail-me">
+      <a href="mailto:contact.utrodus@gmail.com"> Hire Me</a>
+    </button>
   </div>
 </template>
 
@@ -62,9 +63,10 @@ export default {
 </script>
 <style lang="scss">
 .author {
-  max-width: 75%;
   padding: calc(var(--space) / 2) 0;
   display: flex;
+  flex-direction: column;
+  text-align: center;
   align-items: center;
 
   @media screen and (max-width: 800px) {
@@ -73,12 +75,33 @@ export default {
 
   &__image {
     border-radius: 50%;
-    width: 90px;
-    height: 90px;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-bottom: 1rem;
+  }
+
+  button.mail-me {
+    margin-top: 1rem;
+    margin-right: 10px;
+    transition: background-color .2s;
+
+    background-color: var(--cta-bg-color);
+    background-clip: padding-box;
+    border: 3px solid hsla(0, 0%, 100%, .3);
+    border-radius: 15px;
+    font-family: 'Karla';
+    padding: 0.5em 2em;
+    font-size: 0.85em;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    a {
+      color: var(--cta-color);
+    }
   }
 
   &-info {
-    margin-left: 1.3rem;
 
     &__name {
       font-size: 1rem;
@@ -88,7 +111,7 @@ export default {
 
     &__intro {
       opacity: 0.8;
-      font-size: 0.9rem;
+      font-size: 1rem;
       margin-bottom: 0;
     }
 

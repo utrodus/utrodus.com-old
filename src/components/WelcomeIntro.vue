@@ -1,12 +1,12 @@
 <template>
   <div class="welcome">
-    <g-image src="~/assets/images/profile1.webp" alt="profile picture" />
+    <g-image src="~/assets/images/profile_avatar.webp" alt="profile picture" />
     <div>
       <h1 class="welcome-text">
         Hi There, My Name is <strong>Utrodus Said</strong>
       </h1>
       <h1 class="welcome-flip">
-        I'm a <span class="welcome-flip-word"> Flutter Developer </span> <span style="color:white;">🦸🏻‍♂️</span>
+        I'm a <span class="welcome-flip-word"> Mobile Developer </span> <span style="color:white;">🦸🏻‍♂️</span>
         <!-- <span class="welcome-flip-word">
           <textra :data="words" :timer="2" :infinite="true" filter="bottom-top" />
         </span> -->
@@ -123,7 +123,7 @@ export default {
   }
 
   img {
-    border-radius: 50%;
+    // border-radius: 50%;
     width: 50%;
     height: 50%;
     margin: 0 auto 2rem auto;
@@ -136,7 +136,7 @@ export default {
 
     @media (min-width: 801px) {
       margin-right: 2.5rem;
-      width: 18rem;
+      width: 19rem;
     }
   }
 
@@ -261,6 +261,11 @@ export default {
         display: flex;
         align-items: center;
         margin-top: 0.5rem;
+
+        &:hover {
+          transform: translateY(2px);
+          box-shadow: 1px 20px 40px 0 rgba(0, 0, 0, 0.2);
+        }
 
         .label {
           margin-left: 1rem;
