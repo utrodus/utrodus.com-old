@@ -5,12 +5,12 @@
         About Me <span>(A bit 👦🏻 about myself)</span>
       </h1>
       <div class="about-content">
-        <g-image src="~/assets/images/utrodus.webp" alt="utrodus-pic" />
+        <g-image src="https://res.cloudinary.com/dvhxdwwld/image/upload/v1658891397/utrodus_w8ad5s.webp"
+          alt="utrodus-pic" />
         <div class="paragraf">
           <p>
             Hello, my name is Utrodus Said Al Baqi, Flutter Developer from
             Indonesia.
-
           </p>
           <p>
             I like to learn on my initiative and formulate what I want to
@@ -34,17 +34,14 @@
       </div>
 
       <hr />
-      <div class="toolbar-sub">
-        <h1>What services do I offer ?</h1>
-      </div>
-      <p class="services">
-        👨🏼‍💻 Mobile App Development, 🎨 UI Design, 🚀 Rapid Prototyping, 👨🏻‍🏫
-        Private Coding Course
-      </p>
 
-      <div class="toolbar-sub">
-        <h2></h2>
-      </div>
+
+      <!-- <p class="services">
+       🎨 UI Design, 🚀 Rapid Prototyping, 👨🏻‍🏫
+        Private Coding Course
+      </p> -->
+
+
     </div>
   </Layout>
 </template>
@@ -121,38 +118,17 @@ export default {
       p {
         margin-bottom: 0.5rem;
         text-align: justify;
-        font-size: 1.1em;
+        font-size: 1em;
       }
     }
   }
 
-  // .tech-stack {
-  //   display: flex;
-  //   margin-top: 1.3rem;
-
-  //   @media screen and (max-width: 800px) {
-  //     display: grid;
-  //     grid-template-columns: 1fr 1fr 1fr;
-  //     grid-template-rows: 1fr 1fr 1fr;
-  //     margin-top: 1.3rem;
-  //   }
-
-  //   @media screen and (max-width: 1000px) {
-  //     display: grid;
-  //     grid-template-columns: 1fr 1fr 1fr 1fr;
-  //     grid-template-rows: 1fr 1fr 1fr;
-  //     margin-top: 1.3rem;
-  //   }
-
-
-  // }
 
   @media only screen and (max-width: 900px) {
     width: 100%;
   }
 
-  p.services {
-    font-size: 1.2em;
-  }
+
+
 }
 </style>

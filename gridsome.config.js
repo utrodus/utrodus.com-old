@@ -2,7 +2,7 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
   .BundleAnalyzerPlugin;
 
 module.exports = {
-  siteName: "👨🏼‍💻 utrodus.my.id",
+  siteName: "utrodus.my.id",
   siteUrl: "https://utrodus.my.id",
   siteDescription: "Flutter Developer From in Indonesia",
 
@@ -133,7 +133,7 @@ module.exports = {
         icon: "./src/favicon.png",
         lang: "en",
         msTileImage: "",
-        msTileColor: "#b15f2f",
+        msTileColor: "#fff",
         appleMaskIcon: "./src/favicon.png",
         appleMaskIconColor: "#18191c",
         maskableIcon: true,
@@ -182,6 +182,7 @@ module.exports = {
         ],
       },
     },
+   
   ],
 
   transformers: {

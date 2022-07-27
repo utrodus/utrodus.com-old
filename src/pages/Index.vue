@@ -8,7 +8,7 @@
       <div class="projects">
         <featured-project></featured-project>
       </div>
-
+      <services></services>
       <testimonials></testimonials>
       <!-- <div class="experience-education">
         <experience></experience>
@@ -23,9 +23,8 @@
 import FeaturedPost from "~/components/FeaturedPost.vue";
 import FeaturedProject from "../components/FeaturedProject.vue";
 import WelcomeIntro from "../components/WelcomeIntro.vue";
-import Experience from "../components/Experience.vue";
+import Services from "../components/Services.vue";
 import ContactInfo from "../components/ContactInfo.vue";
-import Educations from "../components/Educations.vue";
 import Testimonials from "../components/Testimonials.vue";
 export default {
   metaInfo: {
@@ -36,9 +35,7 @@ export default {
     FeaturedPost,
     FeaturedProject,
     WelcomeIntro,
-    ContactInfo,
-    Experience,
-    Educations,
+    ContactInfo, Services,
     Testimonials,
   },
 };

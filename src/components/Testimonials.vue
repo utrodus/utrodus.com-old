@@ -97,10 +97,11 @@ export default {
 
 <style lang="scss" scoped>
 .testimonials {
+  background: var(--testimonial-bg-color);
 
   .header-title {
     text-align: center;
-    margin: 0 auto 1.5rem auto;
+    margin: 0 auto;
 
   }
 
@@ -108,13 +109,12 @@ export default {
 
   .hooper {
     min-height: 20rem;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
 
     .hooper-list {
       .hooper-track {
         align-items: center;
 
-        .hooper-slide {}
       }
     }
   }

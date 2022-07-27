@@ -1,6 +1,7 @@
 <template>
   <div class="welcome">
-    <g-image src="~/assets/images/profile_avatar.webp" alt="profile picture" />
+    <g-image src="https://res.cloudinary.com/dvhxdwwld/image/upload/v1658891397/profile1_qfxael.webp"
+      alt="profile picture" />
     <div>
       <h1 class="welcome-text">
         Hi There, My Name is <strong>Utrodus Said</strong>
@@ -52,7 +53,7 @@
       <div class="welcome-cta">
         <div class="hire-me">
           <button class="mail-me">
-            <a href="mailto:contact.utrodus@gmail.com"> Hire Me</a>
+            <a href="mailto:contact.utrodus@gmail.com">Hire Me</a>
           </button>
           <g-link to="https://drive.google.com/uc?export=download&id=13bVeMUYhrYGSwN4OWAM2apLwunNI5faa"
             aria-label="Download Resume" class="download-file">
@@ -123,7 +124,7 @@ export default {
   }
 
   img {
-    // border-radius: 50%;
+    border-radius: 50%;
     width: 50%;
     height: 50%;
     margin: 0 auto 2rem auto;
@@ -136,7 +137,7 @@ export default {
 
     @media (min-width: 801px) {
       margin-right: 2.5rem;
-      width: 19rem;
+      width: 17rem;
     }
   }
 
@@ -199,7 +200,6 @@ export default {
   }
 
   &-cta {
-    margin-top: 2rem;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -209,7 +209,7 @@ export default {
     }
 
     .feather {
-      color: white !important;
+      color: var(--link-color);
       font-size: 1rem;
       margin: 0.5rem 1rem;
     }
@@ -219,17 +219,23 @@ export default {
       align-items: center;
 
       &.icon-socmed {
-
         background: linear-gradient(180deg, rgba(101, 86, 110, 1) 0%, rgba(76, 57, 88, 1) 100%);
         border-radius: 15px;
         margin-left: 1rem;
         padding: 0.4rem 0;
+
+        .feather {
+          color: white;
+          font-size: 1rem;
+          margin: 0.5rem 1rem;
+        }
       }
     }
 
     .hire-me {
       display: flex;
       flex-direction: column;
+      align-items: center;
 
       button.mail-me {
         transition: background-color .2s;
@@ -264,7 +270,6 @@ export default {
 
         &:hover {
           transform: translateY(2px);
-          box-shadow: 1px 20px 40px 0 rgba(0, 0, 0, 0.2);
         }
 
         .label {

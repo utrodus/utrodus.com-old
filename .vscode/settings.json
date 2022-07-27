@@ -1,21 +1,25 @@
 {
-	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": true
-	},
-	"editor.validate": ["javascript"],
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"editor.formatOnSave": true,
-	"stylelint.enable": true,
-	"css.validate": true,
-	"scss.validate": true,
-	"vetur.validation.style": false,
-	"vetur.format.defaultFormatter.css": "none",
-	"vetur.format.defaultFormatter.postcss": "none",
-	"vetur.format.defaultFormatter.scss": "none",
-	"[vue]": {
-		"editor.defaultFormatter": "octref.vetur"
-	},
-	"[markdown]": {
-		"editor.defaultFormatter": "yzhang.markdown-all-in-one"
-	}
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.validate": ["javascript"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "stylelint.enable": true,
+  "css.validate": true,
+  "scss.validate": true,
+  "vetur.validation.style": false,
+  "vetur.format.defaultFormatter.css": "none",
+  "vetur.format.defaultFormatter.postcss": "none",
+  "vetur.format.defaultFormatter.scss": "none",
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "[sass]": {
+    "editor.defaultFormatter": "syler.sass-indented"
+  },
+  "vue3snippets.enable-compile-vue-file-on-did-save-code": false
 }
