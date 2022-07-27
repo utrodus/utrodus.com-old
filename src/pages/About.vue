@@ -9,7 +9,7 @@
           alt="utrodus-pic" />
         <div class="paragraf">
           <p>
-            Hello, my name is Utrodus Said Al Baqi, Flutter Developer from
+            Hello, my name is Utrodus Said Al Baqi, Mobile Developer from
             Indonesia.
           </p>
           <p>
