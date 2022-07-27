@@ -10,7 +10,7 @@
 
 			<!-- <g-link to="/blog">Blog</g-link> -->
 			<!-- <g-link to="/resources">Resources</g-link> -->
-			<g-link to="mailto:contact.utrodus@gmail.com">Contact</g-link>
+			<g-link to="/contact">Contact</g-link>
 			<g-link class="resume" to="https://drive.google.com/file/d/13bVeMUYhrYGSwN4OWAM2apLwunNI5faa/view"
 				target="_blank">
 
