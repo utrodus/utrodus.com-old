@@ -1,6 +1,7 @@
 <template>
   <div class="author">
-    <g-image src="~/assets/images/profile1.webp" alt="profile-pic" class="author__image" />
+    <g-image src="https://res.cloudinary.com/dvhxdwwld/image/upload/v1658891397/profile1_qfxael.webp" alt="profile-pic"
+      class="author__image" />
 
     <div class="author-info">
       <p class="author-info__intro">
