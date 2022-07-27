@@ -3,7 +3,7 @@
     <div class="contact">
 
       <div class="contanct-info">
-        <h1 class="welcome-text">Get in touch — let’s work together.</h1>
+        <h2 class="welcome-text">Get in touch — let’s work together.</h2>
         <div class="contact-content">
           <p>
             Email:
@@ -11,7 +11,7 @@
               contact.utrodus@gmail.com</a>
           </p>
           <p>
-            Phone:
+            WhatsApp:
             <a href="https://api.whatsapp.com/send?phone=628165416082&text=Hi!%20Utrodus%20%F0%9F%96%90%EF%B8%8F"
               target="_blank">
               +62 816 5416 082
