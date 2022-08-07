@@ -69,8 +69,8 @@ export default {
   margin-bottom: 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(279px, 1fr));
-  grid-gap: 8px;
-  grid-column-gap: 0.8rem;
+  grid-column-gap: 1.1rem;
+  grid-row-gap: 1.6rem;
 
   .service-item {
     padding: 32px;
