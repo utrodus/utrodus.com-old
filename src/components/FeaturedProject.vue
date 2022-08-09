@@ -17,6 +17,8 @@ query {
         title
         cover_image 
         github_url
+        android_url
+        apple_url
         website_url
         path
         role

@@ -1,40 +1,44 @@
 <template>
-  <div class="project-card content-box">
-    <div class="project-card__content">
-      <g-link :to="project.path">
+  <g-link :to="project.path">
+    <div class="project-card content-box">
+      <div class="project-card__content">
+
         <g-image alt="Cover image" v-if="project.cover_image" class="project-card__image" :src="project.cover_image" />
-      </g-link>
 
-      <h5 class="project-card__title" v-html="project.title" />
+        <h5 class="project-card__title" v-html="project.title" />
+        <p class="project-card__desc" v-html="project.description"></p>
+        <!-- <div class="url-preview">
+        <g-link :to="project.github_url" class="url">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-github">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+            </path>
+          </svg>
+        </g-link>
+        <g-link :to="project.website_url" class="url">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-external-link">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </g-link>
+        <g-link :to="project.website_url" class="url">
+          <svg width="24" height="24" viewBox="0 0 128 128">
+            <path
+              d="M97.905 67.885c.174 18.8 16.494 25.057 16.674 25.137-.138.44-2.607 8.916-8.597 17.669-5.178 7.568-10.553 15.108-19.018 15.266-8.318.152-10.993-4.934-20.504-4.934-9.508 0-12.479 4.776-20.354 5.086-8.172.31-14.395-8.185-19.616-15.724C15.822 94.961 7.669 66.8 18.616 47.791c5.438-9.44 15.158-15.417 25.707-15.571 8.024-.153 15.598 5.398 20.503 5.398 4.902 0 14.106-6.676 23.782-5.696 4.051.169 15.421 1.636 22.722 12.324-.587.365-13.566 7.921-13.425 23.639M82.272 21.719c4.338-5.251 7.258-12.563 6.462-19.836-6.254.251-13.816 4.167-18.301 9.416-4.02 4.647-7.54 12.087-6.591 19.216 6.971.54 14.091-3.542 18.43-8.796">
+            </path>
+          </svg>
 
-      <!-- <g-link :to="project.github_url">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="feather feather-github"
-        >
-          <path
-            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-          ></path></svg
-      ></g-link> -->
-      <g-link :to="project.website_url" class="url">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-          class="feather feather-link">
-          <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-          <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
-        </svg>
-        Preview
-      </g-link>
+        </g-link>
+      </div> -->
+
+      </div>
     </div>
-  </div>
+  </g-link>
 </template>
 
 <script>
@@ -62,9 +66,13 @@ export default {
 
   &__title {
     margin-top: 0.5em;
-    margin-bottom: .8em;
+    margin-bottom: .9em;
     color: var(--body-color);
     text-transform: inherit;
+  }
+
+  &__desc {
+    font-size: 0.85em;
   }
 
   &:hover {
@@ -77,24 +85,21 @@ export default {
     position: relative;
   }
 
-  &__link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    overflow: hidden;
-    z-index: 0;
+  .url-preview {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    .url {
+      display: flex;
+      align-items: center;
+      font-family: 'Karla';
+      font-size: 1em;
+      font-weight: bold;
+    }
   }
 
-  .url {
-    display: flex;
-    align-items: center;
-    font-family: 'Karla';
-    font-size: 1em;
-    font-weight: bold;
-  }
+
 }
 
 .feather {

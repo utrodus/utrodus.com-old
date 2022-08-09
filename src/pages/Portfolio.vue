@@ -5,8 +5,8 @@
 
     <div class="projects">
       <ProjectCard v-for="edge in $page.projects.edges" :key="edge.node.id" :project="edge.node" />
-      <Pager :info="$page.projects.pageInfo" />
     </div>
+    <Pager :info="$page.projects.pageInfo" class="pager-container" linkClass="pager-container__link" />
   </Layout>
 </template>
 
@@ -21,9 +21,12 @@ query($page: Int) {
       node {
         id
         title
+        description
         cover_image 
         github_url
         website_url
+        android_url
+        apple_url
         path
         role
         client
@@ -61,7 +64,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(1fr);
   grid-gap: 1.25rem;
-  padding: 1rem 0 5rem 0;
+  padding: 1rem 0 2rem 0;
 
   @media screen and (min-width: 500px) {
     grid-template-columns: repeat(2, 1fr);
@@ -70,9 +73,41 @@ export default {
   @media screen and (min-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
   }
+
+
 }
 
 a {
   text-decoration: none;
+}
+
+.pager-container {
+  width: 100%;
+  margin: 1rem auto 3rem;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.9rem;
+  color: black;
+
+  &__link {
+    text-align: center;
+    padding: 0.6rem 1.2rem;
+    color: var(--title-color);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--title-color);
+      border: var(--border-service-item);
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+    }
+  }
+}
+
+.active {
+  color: var(--title-color);
+  border: var(--border-service-item);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
 }
 </style>

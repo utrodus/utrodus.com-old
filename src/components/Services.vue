@@ -28,27 +28,6 @@
 
 </template>
 
-<static-query>
-query {
-  allProject(filter: { published: { eq: true }}, limit: 3) {
-    edges {
-      node {
-        id
-        title
-        cover_image
-        github_url
-        website_url
-        path
-        role
-        client
-        platform
-        backend
-        year
-      }
-    }
-  }
-}
-</static-query>
 
 <script>
 import ProjectCard from "~/components/ProjectCard.vue";
