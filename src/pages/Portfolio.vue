@@ -105,9 +105,10 @@ a {
 }
 
 .active {
-  color: var(--title-color);
+  color: #fff;
   border: var(--border-service-item);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgb(214, 97, 173);
+  background: linear-gradient(126deg, rgba(214, 97, 173, 1) 0%, rgba(95, 16, 129, 1) 100%);
   border-radius: 12px;
 }
 </style>
