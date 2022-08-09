@@ -138,7 +138,7 @@ query Project ($id: ID!) {
     content
     github_url
     website_url
-    cover_image (width: 860, blur: 10)
+    cover_image
     role
     client
     platform

@@ -15,7 +15,7 @@ query {
       node {
         id
         title
-        cover_image (width: 770, height: 380, blur: 10)
+        cover_image 
         github_url
         website_url
         path

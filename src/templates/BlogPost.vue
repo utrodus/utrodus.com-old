@@ -12,15 +12,8 @@
 
     <div class="post">
       <div class="post__header">
-        <g-image
-          alt="Cover image"
-          v-if="$page.post.cover_image"
-          :src="$page.post.cover_image"
-        />
-        <g-link
-          v-if="$page.post.unsplash_author"
-          :to="$page.post.unsplash_link"
-        >
+        <g-image alt="Cover image" v-if="$page.post.cover_image" :src="$page.post.cover_image" />
+        <g-link v-if="$page.post.unsplash_author" :to="$page.post.unsplash_link">
           Photo by {{ $page.post.unsplash_author }}
         </g-link>
       </div>
@@ -125,7 +118,7 @@ query Post ($id: ID!,  $previousElement: ID!, $nextElement: ID!) {
     }
     description
     content
-    cover_image (width: 860, blur: 10)
+    cover_image 
     unsplash_author
     unsplash_link
   }
@@ -144,144 +137,145 @@ query Post ($id: ID!,  $previousElement: ID!, $nextElement: ID!) {
 
 <style lang="scss">
 .post {
-	margin: 0 auto;
-	width: 80%;
+  margin: 0 auto;
+  width: 80%;
 
-	@media screen and (max-width: 900px) {
-		width: 100%;
-	}
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
 
-	&__header {
-		width: calc(100% + var(--space) * 2);
-		margin-left: calc(var(--space) * -1);
-		margin-top: calc(var(--space) * 1);
-		margin-bottom: calc(var(--space) * 2);
-		overflow: hidden;
-		position: relative;
+  &__header {
+    width: calc(100% + var(--space) * 2);
+    margin-left: calc(var(--space) * -1);
+    margin-top: calc(var(--space) * 1);
+    margin-bottom: calc(var(--space) * 2);
+    overflow: hidden;
+    position: relative;
 
-		img {
-			width: 100vw;
-			margin: 2rem 0;
-			border-radius: 5px;
-		}
+    img {
+      width: 100vw;
+      margin: 2rem 0;
+      border-radius: 5px;
+    }
 
-		a {
-			font-size: 0.85rem;
-			font-style: italic;
+    a {
+      font-size: 0.85rem;
+      font-style: italic;
 
-			position: absolute;
-			top: 80%;
-			left: 3%;
+      position: absolute;
+      top: 80%;
+      left: 3%;
 
-			&:hover {
-				color: var(--title-color);
-			}
-		}
+      &:hover {
+        color: var(--title-color);
+      }
+    }
 
-		&:empty {
-			display: none;
-		}
-	}
+    &:empty {
+      display: none;
+    }
+  }
 
-	&__content {
-		h1 {
-			position: relative;
-			margin-top: 2em;
-			padding-bottom: 0.25rem;
+  &__content {
+    h1 {
+      position: relative;
+      margin-top: 2em;
+      padding-bottom: 0.25rem;
 
-			&:after {
-				position: absolute;
-				left: 0;
-				bottom: 0;
-				width: 30%;
-				height: 2px;
-				border-bottom: 2px solid var(--link-color);
-				border-radius: 5%;
-				content: "";
-			}
-		}
+      &:after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 30%;
+        height: 2px;
+        border-bottom: 2px solid var(--link-color);
+        border-radius: 5%;
+        content: "";
+      }
+    }
 
-		h2:first-child {
-			margin-top: 0;
-		}
+    h2:first-child {
+      margin-top: 0;
+    }
 
-		p {
-			color: var(--body-color);
-			word-spacing: 1px;
+    p {
+      color: var(--body-color);
+      word-spacing: 1px;
 
-			img {
-				margin-top: 1.5em;
-			}
-		}
+      img {
+        margin-top: 1.5em;
+      }
+    }
 
-		img {
-			width: 100%;
-			display: block;
-			max-width: none;
-			box-shadow: 1px 10px 30px 0 rgba(0, 0, 0, 0.1);
-			border-radius: 10px;
-			margin: 2rem 0;
-		}
+    img {
+      width: 100%;
+      display: block;
+      max-width: none;
+      box-shadow: 1px 10px 30px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin: 2rem 0;
+    }
 
-		pre {
-			margin-bottom: 1.5rem;
-		}
+    pre {
+      margin-bottom: 1.5rem;
+    }
 
-		a {
-			font-style: italic;
+    a {
+      font-style: italic;
 
-			&:hover {
-				color: var(--title-color);
-			}
-		}
-	}
+      &:hover {
+        color: var(--title-color);
+      }
+    }
+  }
 
-	&-title {
-		padding: calc(var(--space) / 6) 0 calc(var(--space) / 6);
-		text-align: center;
-	}
+  &-title {
+    padding: calc(var(--space) / 6) 0 calc(var(--space) / 6);
+    text-align: center;
+  }
 
-	&__related {
-		width: 100%;
-		display: flex;
-		margin-right: 1rem;
-		justify-content: space-between;
-		margin-top: 3rem;
+  &__related {
+    width: 100%;
+    display: flex;
+    margin-right: 1rem;
+    justify-content: space-between;
+    margin-top: 3rem;
 
-		@media screen and (max-width: 800px) {
-			flex-wrap: wrap;
-		}
+    @media screen and (max-width: 800px) {
+      flex-wrap: wrap;
+    }
 
-		&-previous,
-		&-next {
-			width: 100%;
-			margin-right: 1rem;
-			display: flex;
-			flex-direction: column;
-			background-color: var(--bg-content-color);
-			box-shadow: 1px 8px 20px 0 rgba(0, 0, 0, 0.1);
-			padding: 15px;
-			border-radius: 5px;
+    &-previous,
+    &-next {
+      width: 100%;
+      margin-right: 1rem;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg-content-color);
+      box-shadow: 1px 8px 20px 0 rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      border-radius: 5px;
 
-			a {
-				color: var(--title-color);
-			}
-			p {
-				color: var(--link-color);
-			}
-		}
-	}
+      a {
+        color: var(--title-color);
+      }
+
+      p {
+        color: var(--link-color);
+      }
+    }
+  }
 }
 
 .post-author {
-	margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 hr {
-	margin: 5rem 0;
+  margin: 5rem 0;
 }
 
 em {
-	font-weight: bold;
+  font-weight: bold;
 }
 </style>
