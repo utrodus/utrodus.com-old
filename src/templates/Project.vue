@@ -40,7 +40,7 @@
             <g-link :to="$page.project.android_url" v-if="$page.project.android_url != 'none'">
               <g-image class="badge-android" src="../assets/badge-android.png" alt="mobile-app-dev" />
             </g-link>
-            <g-link :to="$page.project.android_url" v-if="$page.project.apple_url != 'none'">
+            <g-link :to="$page.project.apple_url" v-if="$page.project.apple_url != 'none'">
               <g-image src="../assets/badge-apple.svg" alt="mobile-app-dev" />
             </g-link>
           </div>
