@@ -104,41 +104,41 @@ module.exports = {
         id: "UA-156810526-1",
       },
     },
-    {
-      use: "gridsome-plugin-service-worker",
-      options: {
-        networkFirst: {
-          routes: [
-            "/",
-            /\.(js|css|png)$/, // means "every JS, CSS, and PNG images"
-          ],
-        },
-      },
-    },
-    {
-      use: "gridsome-plugin-pwa",
-      options: {
-        startUrl: "/",
-        display: "standalone",
-        statusBarStyle: "default",
-        manifestPath: "manifest.json",
-        title: "Utrodus Flutter Developer",
-        disableServiceWorker: false,
-        serviceWorkerPath: "service-worker.js",
-        cachedFileTypes: "js,json,css,html,png,jpg,jpeg,svg",
-        shortName: "Utrodus Portfolio",
-        description: "Utrodus Portfolio Site",
-        themeColor: "#101024",
-        backgroundColor: "#18191c",
-        icon: "./src/favicon.png",
-        lang: "en",
-        msTileImage: "",
-        msTileColor: "#fff",
-        appleMaskIcon: "./src/favicon.png",
-        appleMaskIconColor: "#18191c",
-        maskableIcon: true,
-      },
-    },
+    // {
+    //   use: "gridsome-plugin-service-worker",
+    //   options: {
+    //     networkFirst: {
+    //       routes: [
+    //         "/",
+    //         /\.(js|css|png)$/, // means "every JS, CSS, and PNG images"
+    //       ],
+    //     },
+    //   },
+    // },
+    // {
+    //   use: "gridsome-plugin-pwa",
+    //   options: {
+    //     startUrl: "/",
+    //     display: "standalone",
+    //     statusBarStyle: "default",
+    //     manifestPath: "manifest.json",
+    //     title: "Utrodus Flutter Developer",
+    //     disableServiceWorker: false,
+    //     serviceWorkerPath: "service-worker.js",
+    //     cachedFileTypes: "js,json,css,html,png,jpg,jpeg,svg",
+    //     shortName: "Utrodus Portfolio",
+    //     description: "Utrodus Portfolio Site",
+    //     themeColor: "#101024",
+    //     backgroundColor: "#18191c",
+    //     icon: "./src/favicon.png",
+    //     lang: "en",
+    //     msTileImage: "",
+    //     msTileColor: "#fff",
+    //     appleMaskIcon: "./src/favicon.png",
+    //     appleMaskIconColor: "#18191c",
+    //     maskableIcon: true,
+    //   },
+    // },
     {
       use: "@gridsome/plugin-sitemap",
       options: {
