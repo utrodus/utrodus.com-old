@@ -15,7 +15,7 @@
           <p>
             I like to learn on my initiative and formulate what I want to
             master (learning objective, resources for learning, and evaluating
-            results).
+            results). test
           </p>
           <p>
             Becoming a
