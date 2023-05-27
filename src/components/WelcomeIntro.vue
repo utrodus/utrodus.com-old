@@ -7,7 +7,7 @@
         Hi There, My Name is <strong>Utrodus Said</strong>
       </h1>
       <h1 class="welcome-flip">
-        I'm a <span class="welcome-flip-word"> Mobile Developer </span> <span style="color:white;">🦸🏻‍♂️</span>
+        I'm a <span class="welcome-flip-word"> Flutter Developer </span> <span style="color:white;">🦸🏻‍♂️</span>
         <!-- <span class="welcome-flip-word">
           <textra :data="words" :timer="2" :infinite="true" filter="bottom-top" />
         </span> -->
@@ -55,7 +55,7 @@
           <button class="mail-me">
             <a href="mailto:contact.utrodus@gmail.com">Hire Me</a>
           </button>
-          <g-link to="https://drive.google.com/uc?export=download&id=13bVeMUYhrYGSwN4OWAM2apLwunNI5faa"
+          <g-link to="https://drive.google.com/uc?export=download&id=1Jh6jWzEFOGR5PFBhW7iHwcUk9wYr-fF-"
             aria-label="Download Resume" class="download-file">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"

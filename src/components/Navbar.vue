@@ -11,7 +11,7 @@
 			<!-- <g-link to="/blog">Blog</g-link> -->
 			<!-- <g-link to="/resources">Resources</g-link> -->
 			<g-link to="/contact">Contact</g-link>
-			<g-link class="resume" to="https://drive.google.com/file/d/13bVeMUYhrYGSwN4OWAM2apLwunNI5faa/view"
+			<g-link class="resume" to="https://drive.google.com/file/d/1Jh6jWzEFOGR5PFBhW7iHwcUk9wYr-fF-/view?usp=drive_link"
 				target="_blank">
 
 				Resume

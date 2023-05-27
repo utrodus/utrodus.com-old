@@ -9,7 +9,7 @@
           alt="utrodus-pic" />
         <div class="paragraf">
           <p>
-            Hello, my name is Utrodus Said Al Baqi, Mobile Developer from
+            Hello, my name is Utrodus Said Al Baqi, Flutter Developer from
             Indonesia.
           </p>
           <p>
@@ -26,7 +26,7 @@
             A more detailed view of my professional abilities and experience
             <br />
             is available on
-            <g-link to="https://drive.google.com/file/d/13bVeMUYhrYGSwN4OWAM2apLwunNI5faa/view?usp=sharing"> <strong> My
+            <g-link to="https://drive.google.com/file/d/1Jh6jWzEFOGR5PFBhW7iHwcUk9wYr-fF-/view?usp=drive_link"> <strong> My
                 Resume</strong>
             </g-link>.
           </p>
