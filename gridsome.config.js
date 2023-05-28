@@ -4,7 +4,15 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
 module.exports = {
   siteName: "utrodus.my.id",
   siteUrl: "https://utrodus.my.id",
-  siteDescription: "Flutter Developer From in Indonesia",
+  siteDescription: "Hello 👋 I'm Utrodus Said a Flutter Developer and Engineer from Indonesia",
+
+  metadata: {
+    author: 'Utrodus Said Al Baqi',    
+    siteUrl: 'https://utrodus.my.id',
+    image: './src/favicon.png',
+    description: "Hello 👋 I'm a Flutter Developer and Engineer ready to collaborate on building the next amazing, life-changing digital product 🥳 With expertise in developing beautiful and performant mobile applications using Flutter, I excel at crafting seamless user experiences for both Android and iOS platforms.",
+    keywords: 'Flutter Developer, Flutter portfolio, Flutter projects, Indonesia, Flutter Developer Indonesia, Jasa Pembuatan Aplikasi Android, Jasa Pembuatan Aplikasi iOS, Android, iOS, Flutter, PWA',
+  },
 
   templates: {
     Post: "/post/:title",
@@ -182,7 +190,13 @@ module.exports = {
         ],
       },
     },
-   
+    {
+      use: '@tawk.to/tawk-messenger-vue-3',
+      options: {
+        propertyId : '6472a32774285f0ec46e01c4',
+        widgetId : '1h1fsqktn'
+      }
+    }
   ],
 
   transformers: {
