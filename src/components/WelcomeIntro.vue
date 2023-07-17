@@ -1,34 +1,19 @@
 <template>
   <div class="welcome">
-    <g-image src="https://res.cloudinary.com/dvhxdwwld/image/upload/v1658891397/profile1_qfxael.webp"
+    <g-image src="https://res.cloudinary.com/dvhxdwwld/image/upload/v1658891397/utrodus_w8ad5s.webp"
       alt="profile picture" />
     <div>
       <h1 class="welcome-text">
-        Hi There, My Name is <strong>Utrodus Said</strong>
+         Hi 👋 I'm Utrodus <strong>Said Al Baqi </strong>
       </h1>
       <h1 class="welcome-flip">
-        I'm a <span class="welcome-flip-word"> Flutter Developer </span> <span style="color:white;">🦸🏻‍♂️</span>
+        
+        <span class="welcome-flip-word"> Flutter Developer </span> <span style="color:white;"></span>
         <!-- <span class="welcome-flip-word">
           <textra :data="words" :timer="2" :infinite="true" filter="bottom-top" />
         </span> -->
-      </h1>
-      <p class="welcome-intro">
-        I Offer services for developing mobile applications (
-        <svg viewBox="0 0 128 128" width="16" height="16">
-          <path fill="#00c4b3" d="M35.2 34.9l-8.3-8.3v59.7l.1 2.8c0 1.3.2 2.8.7 4.3l65.6 23.1 16.3-7.2-74.4-74.4z">
-          </path>
-          <path d="M27.7 93.4zm81.9 15.9l-16.3 7.2-65.4-23.1c1.3 4.8 4 10.1 7 13.2l21.3 21.2 47.6.1 5.8-18.6z"
-            fill="#22d3c5"></path>
-          <path fill="#0075c9"
-            d="M1.7 65.1C-.4 67.3.7 72 4 75.5l14.7 14.8 9.2 3.3c-.3-1.5-.7-3-.7-4.3l-.1-2.8-.2-59.8m82.7 82.6l7.2-16.4-23-65.6c-1.5-.3-3-.6-4.3-.7l-2.9-.1-59.6.1">
-          </path>
-          <path d="M93.6 27.3c.2 0 .2 0 0 0 .2 0 .2 0 0 0zm16 82l17.7-5.8V54.8l-20.4-20.5c-3-3-8.3-5.8-13.2-7l23.1 65.6"
-            fill="#00a8e1"></path>
-          <path fill="#00c4b3"
-            d="M90.5 18.2L75.7 3.5c-3.4-3.4-8-4.4-10.4-2.3L26.9 26.6h59.5l2.9.1c1.3 0 2.8.2 4.3.7l-3.1-9.2z"></path>
-        </svg>
-        +
-        <svg viewBox="0 0 128 128" width="16" height="16">
+        <span>
+         <svg viewBox="0 0 128 128" width="21" height="21">
           <g fill="#3FB6D3">
             <path d="M12.3 64.2L76.3 0h39.4L32.1 83.6zM76.3 128h39.4L81.6 93.9l34.1-34.8H76.3L42.2 93.5z"></path>
           </g>
@@ -42,8 +27,12 @@
           </linearGradient>
           <path fill="url(#flutter-original-a)" d="M61.6 113.1l30.8-8.4-10.8-10.8z"></path>
         </svg>
-
-        ) with a passion for products that are beautiful and easy to use. If
+        
+        
+        </span>
+      </h1>
+      <p class="welcome-intro">
+        I Offer services for developing mobile applications  with a passion for products that are beautiful and easy to use. If
         you're looking to hire me, feel free to
         <strong>
           <a href="mailto:contact.utrodus@gmail.com"> Email Me</a></strong>
@@ -143,10 +132,10 @@ export default {
 
   &-text {
     width: 100%;
-    line-height: 1.5;
     letter-spacing: 1px;
     text-align: center;
     font-size: 1.4em;
+    margin: 0.8rem 0 0.5rem;
 
     @media (min-width: 801px) {
       text-align: left;
