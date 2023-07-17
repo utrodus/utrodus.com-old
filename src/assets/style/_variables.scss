@@ -39,7 +39,7 @@ body {
 
 // Override variables for light theme
 body[data-theme="dark"] {
-  --app-bg-color: radial-gradient(circle at 45% 35vh,#551f2dab, rgba(255, 255, 255, 0) 25%) ,radial-gradient(circle at 60% 45vh,#23014eb5, rgba(255, 255, 255, 0) 25%);
+  --app-bg-color: radial-gradient(circle at 45% 35vh,#712b3dab, rgba(255, 255, 255, 0) 25%) ,radial-gradient(circle at 60% 45vh,#301256b5, rgba(255, 255, 255, 0) 25%);
   --testimonial-bg-color: radial-gradient(circle at 30% 30vh,#22024e4d, rgba(255, 255, 255, 0) 25%) ,radial-gradient(circle at 70% 30vh,#551f2d4b, rgba(255, 255, 255, 0) 25%);
   --header-bg-color: #18191c;
   --bg-color: #18191c;
