@@ -1,3 +1,4 @@
+
 # Utrodus Portfolio
 
 Welcome to my portfolio site! This is a Gridsome-based website showcasing my projects, skills, and experience.
@@ -12,22 +13,24 @@ Before running this project, please ensure that you have the following installed
 
 1. Clone the repository:
 
-   ```shell
-   git clone https://github.com/your-username/utrodus-portfolio.git
+       git clone git@github.com:utrodus/utrodus-site.git
+
    
 2. Install dependencies:
-   ```shell
-   npm install
+
+       npm install
 
 ## Usage
 To start the development server:
-   ```shell
-   npm run develop
+  
+
+       npm run develop
 
 ## Building for Production
 To build the optimized version of the site:
-   ```shell
-   npm run build
+
+       npm run build
+
 The generated files will be placed in the dist directory.
 
 
