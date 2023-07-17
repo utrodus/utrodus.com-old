@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="header-title">What services do I offer ?</h2>
+    <h2 class="header-title">👨🏻‍💻 What services do I offer ?</h2>
     <div class="services">
       <div class="service-item">
         <g-image src="https://res.cloudinary.com/dvhxdwwld/image/upload/v1658891397/tool-iso-premium_kf3czs.png"

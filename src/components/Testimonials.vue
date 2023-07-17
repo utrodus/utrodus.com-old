@@ -1,9 +1,9 @@
 <template>
 
   <section class="testimonials">
-    <h2 class="header-title">Testimonials</h2>
+    <h2 class="header-title">💁‍♂️  What Peoples Say About Me?</h2>
     <hooper :settings="hooperSettings">
-      <slide v-for="(slide, i) in slidesData" :index="i">
+      <slide v-for="(slide, i) in slidesData" :index="i" :key="i">
         <div class="testimonials-box">
           <p class="testimonials-box-content">
             {{ slide.content }}

@@ -4,14 +4,29 @@
       alt="profile picture" />
     <div>
       <h1 class="welcome-text">
-         Hi 👋 I'm Utrodus <strong>Said Al Baqi </strong>
+         Hi <span class="wave"> 👋 </span> I'm Utrodus <strong>Said.</strong>
       </h1>
       <h1 class="welcome-flip">
         
-        <span class="welcome-flip-word"> Flutter Developer </span> <span style="color:white;"></span>
+        <span class="welcome-flip-word"> Flutter Developer </span> 
         <!-- <span class="welcome-flip-word">
           <textra :data="words" :timer="2" :infinite="true" filter="bottom-top" />
         </span> -->
+        (
+         <svg viewBox="0 0 128 128" width="21" height="21">
+          <path fill="#00c4b3" d="M35.2 34.9l-8.3-8.3v59.7l.1 2.8c0 1.3.2 2.8.7 4.3l65.6 23.1 16.3-7.2-74.4-74.4z">
+          </path>
+          <path d="M27.7 93.4zm81.9 15.9l-16.3 7.2-65.4-23.1c1.3 4.8 4 10.1 7 13.2l21.3 21.2 47.6.1 5.8-18.6z"
+            fill="#22d3c5"></path>
+          <path fill="#0075c9"
+            d="M1.7 65.1C-.4 67.3.7 72 4 75.5l14.7 14.8 9.2 3.3c-.3-1.5-.7-3-.7-4.3l-.1-2.8-.2-59.8m82.7 82.6l7.2-16.4-23-65.6c-1.5-.3-3-.6-4.3-.7l-2.9-.1-59.6.1">
+          </path>
+          <path d="M93.6 27.3c.2 0 .2 0 0 0 .2 0 .2 0 0 0zm16 82l17.7-5.8V54.8l-20.4-20.5c-3-3-8.3-5.8-13.2-7l23.1 65.6"
+            fill="#00a8e1"></path>
+          <path fill="#00c4b3"
+            d="M90.5 18.2L75.7 3.5c-3.4-3.4-8-4.4-10.4-2.3L26.9 26.6h59.5l2.9.1c1.3 0 2.8.2 4.3.7l-3.1-9.2z"></path>
+        </svg>
+        +
         <span>
          <svg viewBox="0 0 128 128" width="21" height="21">
           <g fill="#3FB6D3">
@@ -27,7 +42,7 @@
           </linearGradient>
           <path fill="url(#flutter-original-a)" d="M61.6 113.1l30.8-8.4-10.8-10.8z"></path>
         </svg>
-        
+        )
         
         </span>
       </h1>
@@ -44,20 +59,7 @@
           <button class="mail-me">
             <a href="mailto:contact.utrodus@gmail.com">Hire Me</a>
           </button>
-          <g-link to="https://drive.google.com/uc?export=download&id=1Jh6jWzEFOGR5PFBhW7iHwcUk9wYr-fF-"
-            aria-label="Download Resume" class="download-file">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="feather feather-download">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-              <polyline points="7 10 12 15 17 10"></polyline>
-              <line x1="12" y1="15" x2="12" y2="3"></line>
-            </svg>
-            <span class="label">
-              MY RESUME
-
-            </span>
-          </g-link>
+         
         </div>
 
         <g-link to="https://www.linkedin.com/in/utrodus-said/" aria-label="Linkedin" class="icon-socmed">
@@ -120,13 +122,13 @@ export default {
     box-shadow: 1px 10px 30px 0 rgba(0, 0, 0, 0.1);
 
     @media (min-width: 500px) and (max-width: 800px) {
-      width: 30%;
-      height: 30%;
+      width: 25%;
+      height: 25%;
     }
 
     @media (min-width: 801px) {
       margin-right: 2.5rem;
-      width: 17rem;
+      width: 16rem;
     }
   }
 
@@ -136,6 +138,25 @@ export default {
     text-align: center;
     font-size: 1.4em;
     margin: 0.8rem 0 0.5rem;
+
+    .wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
 
     @media (min-width: 801px) {
       text-align: left;
@@ -185,6 +206,9 @@ export default {
 
     @media (min-width: 801px) and (max-width: 1000px) {
       font-size: 0.8em;
+    }
+    @media (min-width: 1200px) {
+      max-width: 70%;
     }
   }
 
