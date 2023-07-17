@@ -36,11 +36,21 @@
       <hr />
 
 
-      <!-- <p class="services">
-       🎨 UI Design, 🚀 Rapid Prototyping, 👨🏻‍🏫
-        Private Coding Course
-      </p> -->
+      <p class="services">
+       I am a passionate and skilled Flutter developer, dedicated to creating stunning and user-friendly mobile applications. My goal is to deliver exceptional experiences to users by crafting beautiful products.
+      </p>
 
+      <p class="services">
+        Specializing in Flutter, a versatile and powerful framework for cross-platform development, I develop applications that seamlessly run on Android, iOS, and the web. This saves you time and effort by providing a unified solution for multiple platforms.
+      </p>
+
+      <p>
+        I believe that aesthetics are just as important as functionality. A visually appealing app enhances user engagement and satisfaction. That's why I focus on designing captivating interfaces that users will love to interact with.
+      </p>
+
+      <p>
+        To see examples of my work, please explore my web portfolio. It showcases my previous projects and demonstrates my commitment to delivering high-quality mobile applications.
+      </p>
 
     </div>
   </Layout>
