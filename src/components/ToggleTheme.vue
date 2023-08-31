@@ -1,38 +1,13 @@
 <template>
-	<button
-		role="button"
-		aria-label="Toggle dark/light"
-		@click.prevent="toggleTheme"
-		class="toggle-theme"
-	>
-		<svg
-			v-if="darkTheme"
-			xmlns="http://www.w3.org/2000/svg"
-			width="24"
-			height="24"
-			viewBox="0 0 24 24"
-			fill="none"
-			stroke="currentColor"
-			stroke-width="2"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-			class="feather feather-moon"
-		>
+	<button role="button" aria-label="Toggle dark/light" @click.prevent="toggleTheme" class="toggle-theme">
+		<svg v-if="darkTheme" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+			stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+			class="feather feather-moon">
 			<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
 		</svg>
-		<svg
-			v-else
-			xmlns="http://www.w3.org/2000/svg"
-			width="24"
-			height="24"
-			viewBox="0 0 24 24"
-			fill="none"
-			stroke="currentColor"
-			stroke-width="2"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-			class="feather feather-sun"
-		>
+		<svg v-else xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+			stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+			class="feather feather-sun">
 			<circle cx="12" cy="12" r="5"></circle>
 			<line x1="12" y1="1" x2="12" y2="3"></line>
 			<line x1="12" y1="21" x2="12" y2="23"></line>
@@ -50,7 +25,7 @@
 export default {
 	data() {
 		return {
-			darkTheme: false,
+			darkTheme: true,
 		};
 	},
 	methods: {
@@ -58,11 +33,11 @@ export default {
 			this.darkTheme = !this.darkTheme;
 
 			// This is using a script that is added in index.html
-			window.__setPreferredTheme(this.darkTheme ? "dark" : "light");
+			window.__setPreferredTheme(this.darkTheme ? "light" : "dark");
 		},
 	},
 	mounted() {
-		if (window.__theme == "dark") this.darkTheme = true;
+		if (window.__theme == "dark") this.darkTheme = false;
 	},
 };
 </script>
@@ -84,6 +59,7 @@ export default {
 	&:hover {
 		opacity: 0.8;
 	}
+
 	&:focus {
 		outline: none;
 	}
