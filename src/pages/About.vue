@@ -9,27 +9,20 @@
           alt="utrodus-pic" />
         <div class="paragraf">
           <p>
-            Hello, my name is Utrodus Said Al Baqi, Flutter Developer from
-            Indonesia.
+            I'm Utrodus Said Al Baqi, a Flutter developer living in Blitar, Indonesia. I've been creating the
+            mobile app for 4+ years and have become pretty good at it.
           </p>
+          <h4><strong>A little more...</strong></h4>
           <p>
-            I like to learn on my initiative and formulate what I want to
-            master (learning objective, resources for learning, and evaluating
-            results).
+            I’m super passionate about design, development, and business. From a technical standpoint, I spend most of my
+            time working with Dart and Flutter.
           </p>
-          <p>
-            Becoming a
-            <strong> Google Developer Expert.</strong>
-            is the career I aspire to.
-          </p>
-          <p>
-            A more detailed view of my professional abilities and experience
-            <br />
-            is available on
-            <g-link to="https://drive.google.com/file/d/1Jh6jWzEFOGR5PFBhW7iHwcUk9wYr-fF-/view?usp=drive_link"> <strong> My
-                Resume</strong>
-            </g-link>.
-          </p>
+
+          <p>Feel free to check out the results of my Flutter projects that I've worked
+            on in the <strong> <a href="/portfolio">project section</a>.</strong></p>
+
+
+
         </div>
       </div>
 
@@ -37,19 +30,29 @@
 
 
       <p class="services">
-       I am a passionate and skilled Flutter developer, dedicated to creating stunning and user-friendly mobile applications. My goal is to deliver exceptional experiences to users by crafting beautiful products.
+        Specializing in Flutter, a versatile and powerful framework for cross-platform
+        development, I develop applications
+        that seamlessly run on Android, iOS, and the web. This saves you time and effort by providing a unified solution
+        for multiple platforms.
       </p>
+
+      <!-- <p class="services">I firmly believe that aesthetics are equally vital as functionality. A visually appealing app
+        elevates user
+        engagement and satisfaction. Hence, I don't just prioritize well-functioning apps; I also prioritize crafting
+        captivating interfaces that users will genuinely enjoy interacting with.</p> -->
 
       <p class="services">
-        Specializing in Flutter, a versatile and powerful framework for cross-platform development, I develop applications that seamlessly run on Android, iOS, and the web. This saves you time and effort by providing a unified solution for multiple platforms.
+        One more thing I'd like to say is that I aspire to achieve the distinction of becoming a <strong>
+          <a href="https://developers.google.com/community/experts?hl=id">
+            Google Developer
+            Expert.</a></strong> in the field of Flutter.
       </p>
-
-      <p>
-        I believe that aesthetics are just as important as functionality. A visually appealing app enhances user engagement and satisfaction. That's why I focus on designing captivating interfaces that users will love to interact with.
-      </p>
-
-      <p>
-        To see examples of my work, please explore my web portfolio. It showcases my previous projects and demonstrates my commitment to delivering high-quality mobile applications.
+      <p class="services">
+        A comprehensive insight into my professional skills and experience can be found on
+        <g-link to="https://drive.google.com/file/d/1Jh6jWzEFOGR5PFBhW7iHwcUk9wYr-fF-/view?usp=drive_link"> <strong>
+            My
+            Resume</strong>
+        </g-link>.
       </p>
 
     </div>
@@ -93,7 +96,7 @@ export default {
   }
 
   hr {
-    margin: 2rem 0 1.5rem;
+    margin: 0 0rem 1.5rem;
     background-color: #424242;
     height: 2px;
     border: none;
@@ -133,6 +136,11 @@ export default {
     }
   }
 
+  .services {
+    margin: 1rem 0;
+    text-align: left;
+    font-size: 0.9;
+  }
 
   @media only screen and (max-width: 900px) {
     width: 100%;

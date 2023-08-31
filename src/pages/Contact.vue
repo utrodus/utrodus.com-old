@@ -25,6 +25,11 @@
               +62 816 5416 082
             </a>
           </p>
+          <p>
+            Telegram:
+            <a href="https://t.me/said_albaqi" target="_blank">
+              @said_albaqi</a>
+          </p>
 
         </div>
       </div>
