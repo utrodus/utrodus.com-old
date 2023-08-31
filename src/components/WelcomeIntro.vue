@@ -4,16 +4,16 @@
       alt="profile picture" />
     <div>
       <h1 class="welcome-text">
-         Hi <span class="wave"> 👋 </span> I'm Utrodus <strong>Said.</strong>
+        Hi <span class="wave"> 👋 </span> I'm Utrodus <strong>Said.</strong>
       </h1>
       <h1 class="welcome-flip">
-        
-        <span class="welcome-flip-word"> Flutter Developer </span> 
+
+        <span class="welcome-flip-word"> Flutter Developer </span>
         <!-- <span class="welcome-flip-word">
           <textra :data="words" :timer="2" :infinite="true" filter="bottom-top" />
         </span> -->
         (
-         <svg viewBox="0 0 128 128" width="21" height="21">
+        <svg viewBox="0 0 128 128" width="21" height="21">
           <path fill="#00c4b3" d="M35.2 34.9l-8.3-8.3v59.7l.1 2.8c0 1.3.2 2.8.7 4.3l65.6 23.1 16.3-7.2-74.4-74.4z">
           </path>
           <path d="M27.7 93.4zm81.9 15.9l-16.3 7.2-65.4-23.1c1.3 4.8 4 10.1 7 13.2l21.3 21.2 47.6.1 5.8-18.6z"
@@ -28,26 +28,27 @@
         </svg>
         +
         <span>
-         <svg viewBox="0 0 128 128" width="21" height="21">
-          <g fill="#3FB6D3">
-            <path d="M12.3 64.2L76.3 0h39.4L32.1 83.6zM76.3 128h39.4L81.6 93.9l34.1-34.8H76.3L42.2 93.5z"></path>
-          </g>
-          <path fill="#27AACD" d="M81.6 93.9l-20-20-19.4 19.6 19.4 19.6z"></path>
-          <path fill="#19599A" d="M115.7 128L81.6 93.9l-20 19.2L76.3 128z"></path>
-          <linearGradient id="flutter-original-a" gradientUnits="userSpaceOnUse" x1="59.365" y1="116.36" x2="86.825"
-            y2="99.399">
-            <stop offset="0" stop-color="#1b4e94"></stop>
-            <stop offset=".63" stop-color="#1a5497"></stop>
-            <stop offset="1" stop-color="#195a9b"></stop>
-          </linearGradient>
-          <path fill="url(#flutter-original-a)" d="M61.6 113.1l30.8-8.4-10.8-10.8z"></path>
-        </svg>
-        )
-        
+          <svg viewBox="0 0 128 128" width="21" height="21">
+            <g fill="#3FB6D3">
+              <path d="M12.3 64.2L76.3 0h39.4L32.1 83.6zM76.3 128h39.4L81.6 93.9l34.1-34.8H76.3L42.2 93.5z"></path>
+            </g>
+            <path fill="#27AACD" d="M81.6 93.9l-20-20-19.4 19.6 19.4 19.6z"></path>
+            <path fill="#19599A" d="M115.7 128L81.6 93.9l-20 19.2L76.3 128z"></path>
+            <linearGradient id="flutter-original-a" gradientUnits="userSpaceOnUse" x1="59.365" y1="116.36" x2="86.825"
+              y2="99.399">
+              <stop offset="0" stop-color="#1b4e94"></stop>
+              <stop offset=".63" stop-color="#1a5497"></stop>
+              <stop offset="1" stop-color="#195a9b"></stop>
+            </linearGradient>
+            <path fill="url(#flutter-original-a)" d="M61.6 113.1l30.8-8.4-10.8-10.8z"></path>
+          </svg>
+          )
+
         </span>
       </h1>
       <p class="welcome-intro">
-        I Offer services for developing mobile applications  with a passion for products that are beautiful and easy to use. If
+        I Offer services for developing mobile applications with a passion for products that are beautiful and easy to
+        use. If
         you're looking to hire me, feel free to
         <strong>
           <a href="mailto:contact.utrodus@gmail.com"> Email Me</a></strong>
@@ -59,7 +60,7 @@
           <button class="mail-me">
             <a href="mailto:contact.utrodus@gmail.com">Hire Me</a>
           </button>
-         
+
         </div>
 
         <g-link to="https://www.linkedin.com/in/utrodus-said/" aria-label="Linkedin" class="icon-socmed">
@@ -106,7 +107,7 @@ export default {
 
 <style lang="scss" scoped>
 .welcome {
-  font-family: "Karla", serif;
+  font-family: "Karla", sans-serif;
   display: flex;
   margin: 2rem 0 0 0;
 
@@ -140,23 +141,52 @@ export default {
     margin: 0.8rem 0 0.5rem;
 
     .wave {
-  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s;        /* Change to speed up or slow down */
-  animation-iteration-count: infinite;  /* Never stop waving :) */
-  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
-  display: inline-block;
-}
+      animation-name: wave-animation;
+      /* Refers to the name of your @keyframes element below */
+      animation-duration: 2.5s;
+      /* Change to speed up or slow down */
+      animation-iteration-count: infinite;
+      /* Never stop waving :) */
+      transform-origin: 70% 70%;
+      /* Pivot around the bottom-left palm */
+      display: inline-block;
+    }
 
-@keyframes wave-animation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-  100% { transform: rotate( 0.0deg) }
-}
+    @keyframes wave-animation {
+      0% {
+        transform: rotate(0.0deg)
+      }
+
+      10% {
+        transform: rotate(14.0deg)
+      }
+
+      /* The following five values can be played with to make the waving more or less extreme */
+      20% {
+        transform: rotate(-8.0deg)
+      }
+
+      30% {
+        transform: rotate(14.0deg)
+      }
+
+      40% {
+        transform: rotate(-4.0deg)
+      }
+
+      50% {
+        transform: rotate(10.0deg)
+      }
+
+      60% {
+        transform: rotate(0.0deg)
+      }
+
+      /* Reset for the last half to pause */
+      100% {
+        transform: rotate(0.0deg)
+      }
+    }
 
     @media (min-width: 801px) {
       text-align: left;
@@ -207,6 +237,7 @@ export default {
     @media (min-width: 801px) and (max-width: 1000px) {
       font-size: 0.8em;
     }
+
     @media (min-width: 1200px) {
       max-width: 70%;
     }
@@ -257,7 +288,7 @@ export default {
         background-clip: padding-box;
         border: 3px solid hsla(0, 0%, 100%, .3);
         border-radius: 15px;
-        font-family: 'Karla';
+        font-family: "Karla", sans-serif;
         padding: 1rem 2.5em;
         font-size: 0.85em;
         font-weight: bold;
@@ -274,7 +305,7 @@ export default {
       .download-file {
         min-width: 44px;
         min-height: 44px;
-        font-family: 'Karla';
+        font-family: "Karla", sans-serif;
         font-weight: 400;
         font-size: 0.7em;
         display: flex;
