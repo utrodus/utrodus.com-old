@@ -7,16 +7,19 @@
 			</main>
 		</transition>
 		<Footer />
+		<NavbarBottom />
 	</div>
 </template>
 
 <script>
 import Navbar from "~/components/Navbar.vue";
+import NavbarBottom from "~/components/NavbarBottom.vue";
 import Footer from "~/components/Footer.vue";
 
 export default {
 	components: {
 		Navbar,
+		NavbarBottom,
 		Footer,
 	},
 };
@@ -90,15 +93,15 @@ export default {
 
 	@media screen and (max-width: 800px) {
 		margin: 0;
-		padding: 0.5% 5%;
+		padding: 6.5% 5%;
 	}
 
 	@media (min-width: 801px) and (max-width: 1200px) {
-		padding: 0.5% 5rem;
+		padding: 6.5% 5rem;
 	}
 
 	@media (min-width: 1201px) {
-		padding: 0.5% 4rem;
+		padding: 6.5% 4rem;
 	}
 
 
