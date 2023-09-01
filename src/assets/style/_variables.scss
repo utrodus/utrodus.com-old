@@ -7,6 +7,7 @@ html {
 body {
   --app-bg-color: #F1F1F1;
   --header-bg-color: #fff;
+  --nav-bg-color: #ffffffc0;
   --bg-color: #F1F1F1;
   --bg-content-color: white;
   --bg-code: #fffbf3;
@@ -42,6 +43,7 @@ body[data-theme="dark"] {
   --app-bg-color: radial-gradient(circle at 45% 35vh,#712b3dab, rgba(255, 255, 255, 0) 25%) ,radial-gradient(circle at 60% 45vh,#301256b5, rgba(255, 255, 255, 0) 25%);
   --testimonial-bg-color: radial-gradient(circle at 30% 30vh,#22024e4d, rgba(255, 255, 255, 0) 25%) ,radial-gradient(circle at 70% 30vh,#551f2d4b, rgba(255, 255, 255, 0) 25%);
   --header-bg-color: #18191c;
+  --nav-bg-color: rgba(25, 25, 25, 0.533);
   --bg-color: #18191c;
   --bg-content-color: #1e2023;
   --bg-code: rgba(0, 0, 0, 0.3);

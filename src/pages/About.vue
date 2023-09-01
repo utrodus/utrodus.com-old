@@ -18,10 +18,14 @@
             time working with Dart and Flutter.
           </p>
 
-          <p>Feel free to check out the results of my Flutter projects that I've worked
-            on in the <strong> <a href="/portfolio">project section</a>.</strong></p>
 
-
+          <p>
+            Let's Check my professional skills and experience on
+            <g-link to="https://drive.google.com/file/d/1Jh6jWzEFOGR5PFBhW7iHwcUk9wYr-fF-/view?usp=drive_link"> <strong>
+                My
+                Resume</strong>
+            </g-link>.
+          </p>
 
         </div>
       </div>
@@ -41,20 +45,16 @@
         engagement and satisfaction. Hence, I don't just prioritize well-functioning apps; I also prioritize crafting
         captivating interfaces that users will genuinely enjoy interacting with.</p> -->
 
+
       <p class="services">
         One more thing I'd like to say is that I aspire to achieve the distinction of becoming a <strong>
           <a href="https://developers.google.com/community/experts?hl=id">
             Google Developer
             Expert.</a></strong> in the field of Flutter.
       </p>
-      <p class="services">
-        A comprehensive insight into my professional skills and experience can be found on
-        <g-link to="https://drive.google.com/file/d/1Jh6jWzEFOGR5PFBhW7iHwcUk9wYr-fF-/view?usp=drive_link"> <strong>
-            My
-            Resume</strong>
-        </g-link>.
-      </p>
 
+      <p class="services">Feel free to check out the results of my Flutter projects that I've worked
+        on in the <strong> <a href="/portfolio">project section</a>.</strong></p>
     </div>
   </Layout>
 </template>

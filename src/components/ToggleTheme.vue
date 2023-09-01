@@ -49,12 +49,12 @@ export default {
 	color: var(--body-color);
 	cursor: pointer;
 
-	@media screen and (max-width: 800px) {
-		position: absolute;
-		top: 0;
-		right: 0;
-		margin: 25px;
-	}
+	// @media screen and (max-width: 800px) {
+	// 	position: absolute;
+	// 	top: 0;
+	// 	right: 0;
+	// 	margin: 25px;
+	// }
 
 	&:hover {
 		opacity: 0.8;

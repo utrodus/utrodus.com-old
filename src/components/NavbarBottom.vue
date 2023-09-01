@@ -1,8 +1,6 @@
 <template>
     <div class="nav-bottom">
-        <!-- <div class="nav-bottom__content">
-			<g-link to="/">utrodus.my.id</g-link>
-		</div> -->
+
 
         <g-link to="/" class="nav_bottom_item">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="navbar__icon"
@@ -44,35 +42,22 @@
             </svg>
             Contact
         </g-link>
-        <g-link class="resume nav_bottom_item"
-            to="https://drive.google.com/file/d/1Jh6jWzEFOGR5PFBhW7iHwcUk9wYr-fF-/view?usp=drive_link" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="navbar__icon"
+
+        <g-link class="nav_bottom_item" to="https://medium.com/@utrodus" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                 style="transform: ;msFilter:;">
                 <path
                     d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z">
                 </path>
                 <path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path>
             </svg>
-            Resume
+            Blog
+
         </g-link>
 
-        <!-- <g-link to="/search" aria-label="Search">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="feather feather-search search-icon"
-        >
-          <circle cx="11" cy="11" r="8"></circle>
-          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
-      </g-link> -->
-        <!-- <ToggleTheme /> -->
+
+
+
     </div>
 </template>
 
@@ -98,10 +83,11 @@ export default {
     bottom: 0;
     width: 100%;
     transition: all 0.3s ease-out 0s;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(50px);
     border-top: 1px solid rgba(255, 255, 255, 0.067);
+    background: var(--nav-bg-color);
 
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 834px) {
         display: none;
     }
 
@@ -123,12 +109,7 @@ export default {
         align-items: center;
         padding: 1rem 0;
         padding-bottom: calc(.5rem + env(safe-area-inset-bottom));
-
-        // padding-bottom: calc(1rem + env(safe-area-inset-bottom));
-        // text-decoration: none;
-        font-family: "Karla", sans-serif;
-
-
+        font-size: 10px;
 
         svg.navbar__icon {
             fill: var(--title-color);
