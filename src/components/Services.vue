@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="services-section">
     <h2 class="header-title">👨🏻‍💻 What services do I offer ?</h2>
     <div class="services">
       <div class="service-item">
@@ -22,19 +22,19 @@
         <p>Are you looking to develop A web app that can be installed on the home screen ? You
           landed at the right place! </p>
       </div>
-
     </div>
   </div>
-
 </template>
 
 
 <script>
 import ProjectCard from "~/components/ProjectCard.vue";
 export default {
+
   components: {
     ProjectCard,
   },
+
 };
 </script>
 
@@ -43,13 +43,30 @@ export default {
   margin: 0 auto 1.5rem;
 }
 
+.services-section {
+  z-index: -10;
+  width: 100%;
+  overflow-x: hidden;
+  background-image: var(--background-img-url);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 30rem;
+
+  @media screen and (max-width: 834px) {
+    background-position: center;
+    background-size: auto;
+  }
+}
+
 .services {
+  // background image from url
   margin-top: 1rem;
   margin-bottom: 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(279px, 1fr));
   grid-column-gap: 1.1rem;
   grid-row-gap: 1.6rem;
+
 
   .service-item {
     padding: 32px;

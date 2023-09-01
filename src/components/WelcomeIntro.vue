@@ -263,7 +263,7 @@ export default {
       align-items: center;
 
       &.icon-socmed {
-        background: linear-gradient(180deg, rgba(101, 86, 110, 1) 0%, rgba(76, 57, 88, 1) 100%);
+        background: var(--cta-icon-socmed-bg-color);
         border-radius: 15px;
         margin-left: 1rem;
         padding: 0.4rem 0;
@@ -284,7 +284,7 @@ export default {
       button.mail-me {
         transition: background-color .2s;
 
-        background-color: var(--cta-bg-color);
+        background: var(--cta-bg-color);
         background-clip: padding-box;
         border: 3px solid hsla(0, 0%, 100%, .3);
         border-radius: 15px;
@@ -329,7 +329,6 @@ export default {
     }
 
   }
-
 
 }
 </style>

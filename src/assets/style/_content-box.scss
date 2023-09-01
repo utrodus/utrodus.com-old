@@ -1,6 +1,6 @@
 // Used to wrap content inside a nice box.
 .content-box {
-  background-color: var(--bg-content-color);
+  background: var(--bg-content-color);
   transition: background-color 0.6s;
   padding: 1rem;
   border-radius: 10px;

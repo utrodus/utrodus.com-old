@@ -5,10 +5,10 @@ html {
 
 // Light default theme
 body {
-  --app-bg-color: #F1F1F1;
+  --app-bg-color: #f0f9ff80;
   --header-bg-color: #fff;
   --nav-bg-color: #ffffffc0;
-  --bg-color: #F1F1F1;
+  --bg-color: #f0f9ff80;
   --bg-content-color: white;
   --bg-code: #fffbf3;
   --body-color: #444;
@@ -16,6 +16,7 @@ body {
   --link-color: #230A4A;
   --cta-color: #ffffff;
   --cta-bg-color: #8a27b5;
+  --cta-icon-socmed-bg-color:linear-gradient(180deg, rgba(101, 86, 110, 1) 0%, rgba(76, 57, 88, 1) 100%);
   --border-color: rgba(0, 0, 0, 0.1);
   --space: 0.5rem;
   --content-width: 860px;
@@ -24,6 +25,7 @@ body {
   --job-title-color:  linear-gradient(45deg,#f83a3a 10%,#f13dd4 50%,#7000ff 90%);
   --border-service-item:1px solid rgba(0, 0, 0, 0.4);;
   --service-desc-color:rgb(0 0 0 / 92%);
+  --background-img-url: none;
 }
 
 // Make  things smaller for mobile
@@ -44,8 +46,8 @@ body[data-theme="dark"] {
   --testimonial-bg-color: radial-gradient(circle at 30% 30vh,#22024e4d, rgba(255, 255, 255, 0) 25%) ,radial-gradient(circle at 70% 30vh,#551f2d4b, rgba(255, 255, 255, 0) 25%);
   --header-bg-color: #18191c;
   --nav-bg-color: rgba(25, 25, 25, 0.533);
-  --bg-color: #18191c;
-  --bg-content-color: #1e2023;
+  --bg-color: #05010d;
+  --bg-content-color: linear-gradient(0deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,.1));
   --bg-code: rgba(0, 0, 0, 0.3);
   --border-color: rgba(255, 255, 255, 0.1);
   --body-color: rgba(255, 255, 255, 0.836);
@@ -53,7 +55,9 @@ body[data-theme="dark"] {
   --link-color: #fff;
   --cta-color: #0d0d0d;
   --cta-bg-color: hsla(0, 0%, 100%, .9);
+  --cta-icon-socmed-bg-color: radial-gradient(100% 100% at 50% 0,hsla(0,0%,100%,.2) 0,hsla(0,0%,100%,0) 100%),hsla(0,0%,100%,.1);
   --job-title-color: #fff;
    --border-service-item:none;
    --service-desc-color:hsla(0, 0%, 100%, .6);
+   --background-img-url: url("https://i.ibb.co/ZxKzvLw/splash-bg-img.jpg");
 }
