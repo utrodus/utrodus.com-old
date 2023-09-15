@@ -56,7 +56,7 @@ export default {
 
   .note {
     font-size: .85em;
-    font-family: 'Karla';
+    font-family: 'Roboto', sans-serif;
 
   }
 

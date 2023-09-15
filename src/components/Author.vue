@@ -90,7 +90,7 @@ export default {
     background-clip: padding-box;
     border: 3px solid hsla(0, 0%, 100%, .3);
     border-radius: 15px;
-    font-family: 'Karla';
+    font-family: 'Roboto', sans-serif;
     padding: 0.5em 2em;
     font-size: 0.85em;
     font-weight: bold;

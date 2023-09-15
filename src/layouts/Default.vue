@@ -31,17 +31,31 @@ export default {
 }
 
 @font-face {
-	font-family: Karla;
-	src: url(../assets/fonts/Karla-Regular.ttf);
+	font-family: Roboto;
+	src: url(../assets/fonts/Roboto-Regular.ttf);
 	font-weight: normal;
 	font-display: swap;
 }
 
 
 @font-face {
-	font-family: Karla;
-	src: url(../assets/fonts/Karla-Medium.ttf);
-	font-weight: medium;
+	font-family: Roboto;
+	src: url(../assets/fonts/Roboto-Medium.ttf);
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../assets/fonts/Roboto-Bold.ttf);
+	font-weight: 700;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../assets/fonts/Roboto-Black.ttf);
+	font-weight: 900;
 	font-display: swap;
 }
 

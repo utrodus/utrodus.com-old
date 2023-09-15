@@ -93,7 +93,7 @@ export default {
     .url {
       display: flex;
       align-items: center;
-      font-family: 'Karla';
+      font-family: 'Roboto', sans-serif;
       font-size: 1em;
       font-weight: bold;
     }

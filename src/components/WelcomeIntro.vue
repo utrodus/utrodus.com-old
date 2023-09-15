@@ -107,7 +107,6 @@ export default {
 
 <style lang="scss" scoped>
 .welcome {
-  font-family: "Karla", sans-serif;
   display: flex;
   margin: 2rem 0 0 0;
 
@@ -217,6 +216,8 @@ export default {
     }
 
     &-word {
+      font-size: 0.9em;
+      font-weight: 700;
       background: linear-gradient(45deg, #ff7070 10%, #f13dd4 50%, #933fff 90%);
       -webkit-background-clip: text;
       background-clip: text;
@@ -227,8 +228,8 @@ export default {
 
   &-intro {
     font-size: 0.9em;
-    margin-top: 1.5rem;
     text-align: center;
+    letter-spacing: 0.2px;
 
     @media (min-width: 801px) {
       text-align: left;
@@ -288,7 +289,6 @@ export default {
         background-clip: padding-box;
         border: 3px solid hsla(0, 0%, 100%, .3);
         border-radius: 15px;
-        font-family: "Karla", sans-serif;
         padding: 1rem 2.5em;
         font-size: 0.85em;
         font-weight: bold;
@@ -305,7 +305,6 @@ export default {
       .download-file {
         min-width: 44px;
         min-height: 44px;
-        font-family: "Karla", sans-serif;
         font-weight: 400;
         font-size: 0.7em;
         display: flex;

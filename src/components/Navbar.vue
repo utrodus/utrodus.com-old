@@ -113,7 +113,7 @@ export default {
 
 			a {
 				margin: 0;
-				font-size: 1.5rem;
+				font-size: 1.3rem;
 				color: var(--title-color);
 			}
 
@@ -161,7 +161,9 @@ a {
 	margin-right: 1.5rem;
 	padding: 0;
 	color: var(--body-color);
-	font-family: "Karla", sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 0.9em;
 
 	// .search-icon{
 	// 	margin-right: 0;

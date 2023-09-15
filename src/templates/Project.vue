@@ -231,7 +231,7 @@ query Project ($id: ID!) {
           display: flex;
           align-items: center;
           justify-content: center;
-          font-family: "Karla", sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 1em;
           color: var(--link-color);
           font-weight: bold;
