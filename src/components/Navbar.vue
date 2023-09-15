@@ -1,11 +1,12 @@
 <template>
 	<div class="nav-wrapper">
 		<div class="nav-header">
-			<div class="nav-header__content">
-				<g-link to="/">utrodus.my.id</g-link>
+			<div class="nav-header__logo">
+				<g-link to="/">
+					<img src="../assets/logo.png" alt="Logo Utrodus" class="logo" />
+				</g-link>
 			</div>
 			<div class="nav-header__links">
-				<!-- <g-link to="/">Home</g-link> -->
 				<g-link to="/about">About</g-link>
 				<g-link to="/portfolio">Projects</g-link>
 
@@ -25,7 +26,7 @@
 				</g-link>
 				<g-link class="resume"
 					to="https://drive.google.com/file/d/1Jh6jWzEFOGR5PFBhW7iHwcUk9wYr-fF-/view?usp=drive_link"
-					target="_blank">
+					target="_blank" style="margin-right: 0;">
 
 					Resume
 					<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
@@ -54,7 +55,9 @@
         </svg>
       </g-link> -->
 			</div>
-			<ToggleTheme />
+			<div>
+				<ToggleTheme />
+			</div>
 		</div>
 	</div>
 </template>
@@ -101,25 +104,28 @@ export default {
 		flex-direction: row;
 		align-content: center;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-around;
 		position: relative;
 
 		@media (min-width: 801px) and (max-width:1200px) {
-			padding: 2.5% 10%;
+			padding: 2.5% 0;
 		}
 
-		&__content {
-			flex-basis: 50%;
+		&__logo {
+			// flex-basis: 50%;
+
+			img.logo {
+				margin-top: 0.5rem;
+				width: 2.5rem;
+			}
 
 			a {
 				margin: 0;
-				font-size: 1.3rem;
-				color: var(--title-color);
 			}
 
-			@media screen and (max-width: 1200px) {
-				flex-basis: 40%;
-			}
+			// @media screen and (max-width: 1200px) {
+			// 	flex-basis: 40%;
+			// }
 		}
 
 		.active--exact {
@@ -158,7 +164,7 @@ p {
 
 a {
 	text-decoration: none;
-	margin-right: 1.5rem;
+	margin-right: 2rem;
 	padding: 0;
 	color: var(--body-color);
 	font-family: 'Roboto', sans-serif;

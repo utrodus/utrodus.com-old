@@ -49,9 +49,13 @@ export default {
 	border: 0;
 	color: var(--body-color);
 	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 
 	.toggle-text {
-		display: none;
+		margin-left: 0.5rem;
+		display: flex;
 	}
 
 	svg.navbar__icon {
@@ -72,6 +76,8 @@ export default {
 		}
 
 		.toggle-text {
+			margin-left: 0;
+
 			margin-top: 0.1rem;
 			display: inline-block;
 		}

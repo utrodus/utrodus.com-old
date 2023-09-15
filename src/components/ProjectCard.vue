@@ -72,7 +72,8 @@ export default {
   }
 
   &__desc {
-    font-size: 0.85em;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
   }
 
   &:hover {
