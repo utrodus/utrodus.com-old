@@ -4,7 +4,7 @@
       alt="profile picture" />
     <div>
       <h1 class="welcome-text">
-        Hi <span class="wave"> 👋 </span> I'm Utrodus <strong>Said.</strong>
+        Hi <span class="wave"> 👋 </span> I'm Utrodus <strong>Said</strong> Al Baqi
       </h1>
       <h1 class="welcome-flip">
 
@@ -47,11 +47,11 @@
         </span>
       </h1>
       <p class="welcome-intro">
-        I Offer services for developing mobile applications with a passion for products that are beautiful and easy to
-        use. If
-        you're looking to hire me, feel free to
+        I Offer Mobile app development services with a passion for creating beautiful and user-friendly products.
+        If you're interested in hiring me, please don't hesitate to
+
         <strong>
-          <a href="mailto:contact.utrodus@gmail.com"> Email Me</a></strong>
+          <a href="mailto:contact.utrodus@gmail.com"> Email Me</a></strong> or chat on this website.
       </p>
       <p></p>
 

@@ -2,7 +2,7 @@
   <Layout>
     <div class="about">
       <h1 class="welcome-text">
-        About Me <span>(A bit 👦🏻 about myself)</span>
+        👦🏻 About Me <span>(A bit about myself)</span>
       </h1>
       <div class="about-content">
         <g-image src="https://res.cloudinary.com/dvhxdwwld/image/upload/v1658891397/utrodus_w8ad5s.webp"
