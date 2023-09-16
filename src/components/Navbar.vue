@@ -98,13 +98,13 @@ export default {
 
 	.nav-header {
 		margin: 0 auto;
-		max-width: 1200px;
+		max-width: 1075px;
 		width: 100%;
 		display: flex;
 		flex-direction: row;
 		align-content: center;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-between;
 		position: relative;
 
 		@media (min-width: 801px) and (max-width:1200px) {
