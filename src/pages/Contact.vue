@@ -37,23 +37,16 @@
       <ol>
         <li class="term"><strong> Contact Information:</strong> Please use the provided contact methods or website
           chat.</li>
-        <li class="term"><strong>Project Details:</strong> Include a clear project description with deadlines and
-          potential budgets.</li>
-        <li class="term"><strong>Confidentiality: </strong>I will maintain the confidentiality of the information you
-          provide and am open
-          to signing a
-          non-disclosure agreement if needed.</li>
+
+
         <li class="term"><strong>Collaboration: </strong>I'm open to discussions and collaboration but require a written
           agreement before
           commencing a
           project.</li>
-        <li class="term"><strong>Payment: </strong>Payment details will be discussed during our conversation and must
-          align with our
-          agreement.</li>
-        <li class="term"><strong>Acceptance: </strong>I reserve the right to decline projects for any reason and can
-          terminate
-          collaboration in case of
-          violations or non-compliance with our agreed terms.</li>
+        <li class="term"><strong>Confidentiality: </strong>I will maintain the confidentiality of the information you
+          provide and am open
+          to signing a
+          non-disclosure agreement if needed.</li>
       </ol>
       <p>I appreciate your interest, and I look forward to a potential collaboration. 😊</p>
 
@@ -67,7 +60,8 @@
 <script>
 export default {
   metaInfo: {
-    title: "About",
+    title: "Contact",
+    description: "Contact Utrodus Said Al Baqi",
   },
 };
 </script>
