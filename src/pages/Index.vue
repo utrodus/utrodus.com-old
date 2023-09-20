@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import FeaturedPost from "~/components/FeaturedPost.vue";
+// import FeaturedPost from "~/components/FeaturedPost.vue";
 import FeaturedProject from "../components/FeaturedProject.vue";
 import WelcomeIntro from "../components/WelcomeIntro.vue";
 import Services from "../components/Services.vue";
@@ -28,11 +28,12 @@ import ContactInfo from "../components/ContactInfo.vue";
 import Testimonials from "../components/Testimonials.vue";
 export default {
   metaInfo: {
-    title: "Utrodus Said",
+    title: "Flutter Developer",
+    description: "Hello 👋 I'm Utrodus Said a Freelance Flutter Developer from Indonesia",
   },
 
   components: {
-    FeaturedPost,
+    // FeaturedPost,
     FeaturedProject,
     WelcomeIntro,
     ContactInfo, Services,

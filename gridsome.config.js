@@ -2,15 +2,15 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
   .BundleAnalyzerPlugin;
 
 module.exports = {
-  siteName: "utrodus.my.id",
+  siteName: "Utrodus Said Al Baqi",
   siteUrl: "https://utrodus.my.id",
-  siteDescription: "Hello 👋 I'm Utrodus Said a Flutter Developer and Engineer from Indonesia",
+  siteDescription: "Hello 👋 I'm Utrodus Said a Freelance Flutter Developer and Engineer from Indonesia",
 
   metadata: {
     author: 'Utrodus Said Al Baqi',    
     siteUrl: 'https://utrodus.my.id',
     image: './src/favicon.png',
-    description: "Hello 👋 I'm a Flutter Developer and Engineer ready to collaborate on building the next amazing, life-changing digital product 🥳 With expertise in developing beautiful and performant mobile applications using Flutter, I excel at crafting seamless user experiences for both Android and iOS platforms.",
+    description: "Hello 👋 I'm a Freelance Flutter Developer and Engineer ready to collaborate on building the next amazing, life-changing digital product 🥳 With expertise in developing beautiful and performant mobile applications using Flutter, I excel at crafting seamless user experiences for both Android and iOS platforms.",
     keywords: 'Flutter Developer, Flutter portfolio, Flutter projects, Indonesia, Flutter Developer Indonesia, Jasa Pembuatan Aplikasi Android, Jasa Pembuatan Aplikasi iOS, Android, iOS, Flutter, PWA',
   },
 

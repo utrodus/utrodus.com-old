@@ -1,8 +1,8 @@
 <template>
   <Layout>
 
-    <h1 class="welcome-text">My Projects</h1>
-
+    <h1 class="welcome-text">📦 Projects </h1>
+    <p>(Several projects that I have completed)</p>
     <div class="projects">
       <ProjectCard v-for="edge in $page.projects.edges" :key="edge.node.id" :project="edge.node" />
     </div>
@@ -49,15 +49,21 @@ export default {
     Pager,
   },
   metaInfo: {
-    title: "Portfolio",
+    title: "Projects",
+    description: "Projects - Utrodus Said Al Baqi",
   },
 };
 </script>
 
 <style lang="scss" scoped>
 .welcome-text {
-  text-align: center;
-  margin: 1.5rem 0;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-weight: 400;
+  margin-bottom: 2rem;
 }
 
 .projects {

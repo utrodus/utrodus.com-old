@@ -8,7 +8,7 @@
 			</div>
 			<div class="nav-header__links">
 				<g-link to="/about">About</g-link>
-				<g-link to="/portfolio">Projects</g-link>
+				<g-link to="/projects">Projects</g-link>
 
 				<!-- <g-link to="/blog">Blog</g-link> -->
 				<!-- <g-link to="/resources">Resources</g-link> -->
@@ -109,6 +109,10 @@ export default {
 
 		@media (min-width: 801px) and (max-width:1200px) {
 			padding: 2.5% 0;
+		}
+
+		@media screen and (max-width: 1150px) {
+			justify-content: space-evenly;
 		}
 
 		&__logo {

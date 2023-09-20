@@ -30,7 +30,7 @@
         </div>
 
         <div class="short-desc_item">
-          <h3 class="short-desc_item_title">Year</h3>
+          <h3 class="short-desc_item_title">Completion date</h3>
 
           <p class="short-desc_item_content">{{ $page.project.year }}</p>
         </div>
@@ -72,50 +72,38 @@
           </p>
 
         </div>
-        <!-- <g-link :to="$page.project.github_url">
-    
-              <svg
-    
-                xmlns="http://www.w3.org/2000/svg"
-    
-                width="32"
-    
-                height="32"
-    
-                viewBox="0 0 24 24"
-    
-                fill="none"
-    
-                stroke="currentColor"
-    
-                stroke-width="2"
-    
-                stroke-linecap="round"
-    
-                stroke-linejoin="round"
-    
-                class="feather feather-github"
-    
-              >
-    
-                <path
-    
-                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-    
-                ></path></svg
-    
-            ></g-link> -->
       </div>
     </div>
 
-    <div class="project content-box">
-      <g-image alt="Cover image" v-if="$page.project.cover_image" :src="$page.project.cover_image" />
-      <div class="project__header"></div>
+    <div class="project">
+      <g-image class="project__cover" alt="Cover image" v-if="$page.project.cover_image"
+        :src="$page.project.cover_image" />
 
-      <div class="project__content" v-html="$page.project.content" />
+
+      <div class="project__container">
+        <div class="project__container__contents" v-html="$page.project.content" />
+        <div class="project__container__screnshots" v-if="$page.project.screnshots.length != 0">
+          <!-- <h4>Preview</h4> -->
+          <!-- Make a div wrapped slider,set height and width -->
+          <!-- Using the slider component -->
+          <slider ref="slider" :options="options" @slide='slide' @tap='onTap' @init='onInit'>
+            <!-- slideritem wrapped package with the components you need -->
+            <slideritem v-for="(url, i) in  $page.project.screnshots " :index="i" :key="i">
+              <g-image :alt="$page.project.title" :src="url" />
+            </slideritem>
+            <!-- Customizable loading -->
+            <!-- <div slot="loading">loading...</div> -->
+          </slider>
+
+        </div>
+      </div>
+
+
+
+
     </div>
 
-    <Author class="project-author" />
+    <!-- <Author class="project-author" /> -->
   </Layout>
 </template>
 
@@ -123,11 +111,29 @@
 import Author from "~/components/Author.vue";
 import PostMeta from "~/components/PostMeta";
 import PostTags from "~/components/PostTags";
+import { slider, slideritem } from 'vue-concise-slider'
+
 export default {
+  data() {
+    return {
+      //Slider configuration [obj]
+      options: {
+        pagination: true,
+        thresholdDistance: 100, // Sliding distance threshold
+        thresholdTime: 300, // Sliding time threshold decision
+        grabCursor: true, // Scratch style
+        speed: 300 // Sliding speed
+        // timingFunction: 'ease', // Sliding mode
+        // loop: false, // Infinite loop
+        // autoplay: 0 // Auto play[ms]
+      }
+    }
+  },
   components: {
     Author,
     PostMeta,
-    PostTags,
+    PostTags, slider,
+    slideritem
   },
   metaInfo() {
     return {
@@ -167,7 +173,8 @@ query Project ($id: ID!) {
     client
     platform
     backend
-    year
+    year, 
+    screnshots
   }
 }
 </page-query>
@@ -248,58 +255,60 @@ query Project ($id: ID!) {
 .project {
   width: 100%;
   margin: 0 auto 3.5rem auto;
-  max-width: 1024px;
+  max-width: 1200px;
+  padding: 1rem;
+  background: var(--bg-content-color);
+  border-radius: 1rem;
 
-  &__header {
-    width: calc(100% + var(--space) * 2);
-    margin-left: calc(var(--space) * -1);
-    margin-top: calc(var(--space) * 1);
-    margin-bottom: calc(var(--space) * 2);
-    overflow: hidden;
-    border-radius: var(--radius) var(--radius) 0 0;
-
-    img {
-      width: 100%;
-    }
-
-    &:empty {
-      display: none;
-    }
-
+  img.project__cover {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
   }
 
-  &.content-box {
-    img {
-      width: 100%;
-      margin-bottom: 1.5rem;
-    }
-  }
+  &__container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
 
-  &__content {
-    h1 {
-      margin-top: 2em;
-    }
-
-    h2:first-child {
-      margin-top: 0;
+    @media screen and (max-width: 999px) {
+      grid-template-columns: 1fr;
+      padding: 0;
     }
 
-    p {
-      color: var(--body-color);
+    @media (min-width:1000px) and (max-width: 1100px) {
+      grid-template-columns: 1fr 1fr;
+    }
 
-      img {
-        margin-top: 1.5em;
+    &__contents {
+      @media (min-width:1000px) {
+        padding-right: 1.5rem;
       }
+
     }
 
-    img {
-      width: calc(100% + var(--space) * 2);
-      margin-left: calc(var(--space) * -1);
-      display: block;
-      max-width: none;
+    &__screnshots {
+      margin: 0 auto;
+      width: 100%;
+
+      @media (min-width: 500px) and (max-width: 700px) {
+        width: 60%;
+      }
+
+      @media (min-width: 701px) and (max-width: 999px) {
+        width: 40%;
+      }
+
+
     }
+
+
   }
+
 }
+
+
 
 .project-author {
   margin-top: calc(var(--space) / 2);

@@ -63,6 +63,7 @@
 export default {
   metaInfo: {
     title: "About",
+    description: "A bit about Utrodus Said Al Baqi"
   },
 };
 </script>

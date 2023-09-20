@@ -5,7 +5,7 @@ html {
 
 // Light default theme
 body {
-  --app-bg-color: #f0f9ff80;
+  --app-bg-color: #f9f0ff80;
   --header-bg-color: #fff;
   --nav-bg-color: #ffffffc0;
   --bg-color: #f0f9ff80;
@@ -26,6 +26,7 @@ body {
   --border-service-item:1px solid rgba(0, 0, 0, 0.4);;
   --service-desc-color:rgb(0 0 0 / 92%);
   --background-img-url: none;
+  --slider-bullet-color: #656565;
 }
 
 // Make  things smaller for mobile
@@ -60,4 +61,5 @@ body[data-theme="dark"] {
    --border-service-item:none;
    --service-desc-color:hsla(0, 0%, 100%, .6);
    --background-img-url: url("https://i.ibb.co/ZxKzvLw/splash-bg-img.jpg");
+   --slider-bullet-color: #ebebeb;
 }

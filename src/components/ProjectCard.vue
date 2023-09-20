@@ -62,6 +62,8 @@ export default {
 
   &__image {
     width: 100vw;
+    height: 11.5rem;
+    object-fit: cover;
   }
 
   &__title {

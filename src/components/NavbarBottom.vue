@@ -18,7 +18,7 @@
             </svg>
             About
         </g-link>
-        <g-link to="/portfolio" class="nav_bottom_item">
+        <g-link to="/projects" class="nav_bottom_item">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="navbar__icon">
                 <path
                     d="M20 6h-3V4c0-1.103-.897-2-2-2H9c-1.103 0-2 .897-2 2v2H4c-1.103 0-2 .897-2 2v11c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2zm-4 2v11H8V8h8zm-1-4v2H9V4h6zM4 8h2v11H4V8zm14 11V8h2l.001 11H18z">
@@ -38,7 +38,7 @@
             </svg>
             Contact
         </g-link>
-
+        <!-- 
         <g-link class="nav_bottom_item" to="https://medium.com/@utrodus" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="navbar__icon">
                 <path
@@ -48,7 +48,7 @@
             </svg>
             Blog
 
-        </g-link>
+        </g-link> -->
         <ToggleTheme />
 
 
@@ -82,6 +82,7 @@ export default {
     backdrop-filter: blur(50px);
     border-top: 1px solid rgba(255, 255, 255, 0.067);
     background: var(--nav-bg-color);
+    z-index: 9999;
 
     @media screen and (min-width: 834px) {
         display: none;

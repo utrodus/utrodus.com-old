@@ -26,6 +26,7 @@ query {
         platform
         backend
         year
+        description
       }
     }
   }
