@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="header-title">📦 Featured Projects </h2>
+    <h2 class="header-title">⏳ Recent Projects </h2>
     <div class="projects">
       <ProjectCard v-for="project in $static.allProject.edges" :key="project.node.id" :project="project.node" />
     </div>

@@ -47,6 +47,10 @@
           <h3 class="short-desc_item_title"
             v-if="$page.project.android_url == 'none' && $page.project.apple_url == 'none'">Project Link</h3>
           <p class="short-desc_item_content img-link"
+            v-if="$page.project.android_url == 'none' && $page.project.apple_url == 'none' && $page.project.website_url == 'none' && $page.project.github_url == 'none'">
+            Coming Soon
+          </p>
+          <p class="short-desc_item_content img-link"
             v-if="$page.project.android_url == 'none' && $page.project.apple_url == 'none'">
             <g-link v-if="$page.project.website_url != 'none'" :to="$page.project.website_url" class="url"><svg
                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
@@ -82,14 +86,15 @@
 
       <div class="project__container">
         <div class="project__container__contents" v-html="$page.project.content" />
+        <br>
         <div class="project__container__screnshots" v-if="$page.project.screnshots.length != 0">
-          <!-- <h4>Preview</h4> -->
+          <h3 style="text-align: center;font-weight: bold;margin: 0;">Preview App:</h3>
           <!-- Make a div wrapped slider,set height and width -->
           <!-- Using the slider component -->
-          <slider ref="slider" :options="options" @slide='slide' @tap='onTap' @init='onInit'>
+          <slider ref="slider" :options="options" @slide='slide' @tap='onTap' @init='onInit' style="margin-top: 1.25rem;">
             <!-- slideritem wrapped package with the components you need -->
             <slideritem v-for="(url, i) in  $page.project.screnshots " :index="i" :key="i">
-              <g-image :alt="$page.project.title" :src="url" />
+              <g-image draggable="false" :alt="$page.project.title" :src="url" />
             </slideritem>
             <!-- Customizable loading -->
             <!-- <div slot="loading">loading...</div> -->
@@ -174,7 +179,8 @@ query Project ($id: ID!) {
     platform
     backend
     year, 
-    screnshots
+    screnshots,
+
   }
 }
 </page-query>
@@ -267,23 +273,23 @@ query Project ($id: ID!) {
   }
 
   &__container {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-gap: 1rem;
+    // display: grid;
+    // grid-template-columns: 3fr 1fr;
+    // grid-gap: 1rem;
     padding: 1rem;
 
     @media screen and (max-width: 999px) {
-      grid-template-columns: 1fr;
+      // grid-template-columns: 1fr;
       padding: 0;
     }
 
     @media (min-width:1000px) and (max-width: 1100px) {
-      grid-template-columns: 1fr 1fr;
+      // grid-template-columns: 1fr 1fr;
     }
 
     &__contents {
       @media (min-width:1000px) {
-        padding-right: 1.5rem;
+        // padding-right: 1.5rem;
       }
 
     }
@@ -300,6 +306,9 @@ query Project ($id: ID!) {
         width: 40%;
       }
 
+      @media (min-width:1000px) {
+        width: 30%;
+      }
 
     }
 
