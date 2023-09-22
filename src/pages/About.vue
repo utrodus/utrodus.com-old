@@ -54,7 +54,7 @@
       </p>
 
       <p class="services">Feel free to check out the results of my Flutter projects that I've worked
-        on in the <strong> <a href="/portfolio">project section</a>.</strong></p>
+        on in the <strong> <a href="/projects">project section</a>.</strong></p>
     </div>
   </Layout>
 </template>
