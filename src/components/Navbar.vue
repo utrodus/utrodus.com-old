@@ -4,6 +4,7 @@
 			<div class="nav-header__logo">
 				<g-link to="/">
 					<img src="../assets/logo.png" alt="Logo Utrodus" class="logo" />
+					<p>Utrodus</p>
 				</g-link>
 			</div>
 			<div class="nav-header__links">
@@ -116,15 +117,21 @@ export default {
 		}
 
 		&__logo {
-			// flex-basis: 50%;
-
 			img.logo {
 				margin-top: 0.5rem;
-				width: 2.5rem;
+				width: 1.5rem;
 			}
 
 			a {
+				display: flex;
+				align-items: center;
 				margin: 0;
+
+				p {
+					margin: 0.45rem 0 0 0.6rem;
+					font-size: 1.2rem;
+					font-weight: bold;
+				}
 			}
 
 			// @media screen and (max-width: 1200px) {
