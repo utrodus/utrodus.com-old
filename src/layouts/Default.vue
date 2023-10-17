@@ -111,11 +111,11 @@ export default {
 	}
 
 	@media (min-width: 801px) and (max-width: 1200px) {
-		padding: 6.5% 5rem;
+		padding: 6.5% 5rem 2% 5rem;
 	}
 
 	@media (min-width: 1201px) {
-		padding: 6.5% 4rem;
+		padding: 6.5% 4rem 2% 4rem;
 	}
 
 
