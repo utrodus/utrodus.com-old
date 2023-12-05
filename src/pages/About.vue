@@ -9,36 +9,35 @@
           alt="utrodus-pic" />
         <div class="paragraf">
           <p>
-            I'm Utrodus Said Al Baqi, a Flutter developer living in Blitar, Indonesia. I've been creating the
-            mobile app for <strong> 4+ years</strong> and have some projects that I've worked on.
+            I am Utrodus Said Al Baqi, a skilled Flutter developer based in Blitar, Indonesia, with over 4 years of
+            experience in app development. Throughout my career, I have worked on <strong><a href="/projects">various
+                projects </a></strong> that have honed my
+            skills.
+
           </p>
           <p>
-            I specialize in app development using Flutter, a versatile and powerful framework for cross-platform
-            development. Over the past few years, I have successfully developed various applications for Android, iOS, and
-            the web using Flutter.
+            Over the years, I have successfully delivered a series of customized applications for Android, iOS, and the
+            web, leveraging the full potential of Flutter's capabilities.
           </p>
           <p>
-            One more thing I'd like to say is that I aspire to achieve the distinction of becoming a <strong>
-              <a href="https://developers.google.com/community/experts?hl=id">
+            In addition to my current accomplishments, I have ambitious goals and aim to become a <strong><a
+                href="https://developers.google.com/community/experts?hl=id">
                 Google Developer
-                Expert</a></strong> in the field of Flutter.
+                Expert</a></strong>.
+            This aspiration drives my passion for continuous learning and innovation.
           </p>
 
-
+          <p>I'm not just a regular developer; I'm also someone who approaches each project with dedication and
+            creativity, ensuring that the result not only meets but exceeds expectations.</p>
           <p>
-            Let's Check my professional skills and experience on
-            <g-link to="https://drive.google.com/file/d/1Jh6jWzEFOGR5PFBhW7iHwcUk9wYr-fF-/view?usp=drive_link"> <strong>
+            For more details about my professional skills and experience, please refer to <g-link
+              to="https://drive.google.com/file/d/1Jh6jWzEFOGR5PFBhW7iHwcUk9wYr-fF-/view?usp=drive_link"> <strong>
                 My
                 Resume 📜</strong>
             </g-link>.
           </p>
-          <p>
-            From a 👨🏻‍🔬 technical standpoint, I spend most of my
-            time working with <strong> Dart and Flutter</strong>. Feel free to check out the results of my Flutter
-            projects
-            that I've worked
-            on in the <strong> <a href="/projects">project section</a>.</strong>
-          </p>
+
+
         </div>
       </div>
 
@@ -180,7 +179,7 @@ export default {
 
     img {
       border-radius: 12px;
-      width: 12rem;
+      width: 16rem;
       margin: 1rem auto 2rem;
       box-shadow: 1px 10px 30px 0 rgba(0, 0, 0, 0.1);
 
