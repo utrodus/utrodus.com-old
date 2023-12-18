@@ -87,20 +87,20 @@
       <div class="project__container">
         <div class="project__container__contents" v-html="$page.project.content" />
         <br>
-        <div class="project__container__screnshots" v-if="$page.project.screnshots.length != 0">
-          <h3 style="text-align: center;font-weight: bold;margin: 0;">Preview App:</h3>
-          <!-- Make a div wrapped slider,set height and width -->
-          <!-- Using the slider component -->
-          <slider ref="slider" :options="options" @slide='slide' @tap='onTap' @init='onInit' style="margin-top: 1.25rem;">
-            <!-- slideritem wrapped package with the components you need -->
-            <slideritem v-for="(url, i) in  $page.project.screnshots " :index="i" :key="i">
-              <g-image draggable="false" :alt="$page.project.title" :src="url" />
-            </slideritem>
-            <!-- Customizable loading -->
-            <!-- <div slot="loading">loading...</div> -->
-          </slider>
+        <!-- <div class="project__container__screnshots" v-if="$page.project.screnshots.length != 0"> -->
+        <!-- <h3 style="text-align: center;font-weight: bold;margin: 0;">Preview App:</h3> -->
+        <!-- Make a div wrapped slider,set height and width -->
+        <!-- Using the slider component -->
+        <!-- <slider ref="slider" :options="options" @slide='slide' @tap='onTap' @init='onInit' style="margin-top: 1.25rem;"> -->
+        <!-- slideritem wrapped package with the components you need -->
+        <!-- <slideritem v-for="(url, i) in  $page.project.screnshots " :index="i" :key="i"> -->
+        <!-- <g-image draggable="false" :alt="$page.project.title" :src="url" /> -->
+        <!-- </slideritem> -->
+        <!-- Customizable loading -->
+        <!-- <div slot="loading">loading...</div> -->
+        <!-- </slider> -->
 
-        </div>
+        <!-- </div> -->
       </div>
 
 
@@ -116,7 +116,7 @@
 import Author from "~/components/Author.vue";
 import PostMeta from "~/components/PostMeta";
 import PostTags from "~/components/PostTags";
-import { slider, slideritem } from 'vue-concise-slider'
+// import { slider, slideritem } from 'vue-concise-slider'
 
 export default {
   data() {
@@ -137,8 +137,9 @@ export default {
   components: {
     Author,
     PostMeta,
-    PostTags, slider,
-    slideritem
+    PostTags,
+    // slider,
+    // slideritem
   },
   metaInfo() {
     return {
