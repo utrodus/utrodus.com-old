@@ -3,12 +3,12 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
 
 module.exports = {
   siteName: "Utrodus Said Al Baqi",
-  siteUrl: "https://utrodus.my.id",
+  siteUrl: "https://utrodus.com",
   siteDescription: "Hello 👋 I'm Utrodus Said a Freelance Flutter Developer and Engineer from Indonesia",
 
   metadata: {
     author: 'Utrodus Said Al Baqi',    
-    siteUrl: 'https://utrodus.my.id',
+    siteUrl: 'https://utrodus.com',
     image: './src/favicon.png',
     description: "Hello 👋 I'm a Freelance Flutter Developer and Engineer ready to collaborate on building the next amazing, life-changing digital product 🥳 With expertise in developing beautiful and performant mobile applications using Flutter, I excel at crafting seamless user experiences for both Android and iOS platforms.",
     keywords: 'Flutter Developer, Flutter portfolio, Flutter projects, Indonesia, Flutter Developer Indonesia, Jasa Pembuatan Aplikasi Android, Jasa Pembuatan Aplikasi iOS, Android, iOS, Flutter, PWA',
@@ -171,8 +171,8 @@ module.exports = {
     {
       use: "gridsome-plugin-robots-txt",
       options: {
-        host: "https://utrodus.my.id/",
-        sitemap: "https://utrodus.my.id/sitemap.xml",
+        host: "https://utrodus.com/",
+        sitemap: "https://utrodus.com/sitemap.xml",
         policy: [
           {
             userAgent: "Googlebot",
