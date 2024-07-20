@@ -58,7 +58,7 @@
       <div class="welcome-cta">
         <div class="hire-me">
           <button class="mail-me">
-            <a href="mailto:contact.utrodus@gmail.com">Hire Me</a>
+            <a href="https://www.upwork.com/freelancers/~01da67bb62a6fdc029">Hire Me</a>
           </button>
 
         </div>
