@@ -8,13 +8,14 @@
 				</g-link>
 			</div>
 			<div class="nav-header__links">
+				<!-- <g-link to="/">Home</g-link> -->
 				<g-link to="/about">About</g-link>
 				<g-link to="/projects">Projects</g-link>
 
 				<!-- <g-link to="/blog">Blog</g-link> -->
 				<!-- <g-link to="/resources">Resources</g-link> -->
 				<g-link to="/contact">Contact</g-link>
-				<g-link class="resume" to="https://medium.com/@utrodus" target="_blank">
+				<g-link class="resume" to="https://dev.to/utrodus" target="_blank">
 
 					Blog
 					<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
